@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: rejoy;
+    src: url(./assets/SuisseIntl-Regular.woff2);
+}
