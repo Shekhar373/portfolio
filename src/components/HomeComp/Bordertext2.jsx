@@ -18,11 +18,11 @@ const BorderText2 = () => {
     })
   })
   return (
-    <div ref={bottomtext} className='lg:h-[30vh]  sm:h-[40vh]  w-full font-light lg:p-10 max-sm:p-3 text-black flex lg:text-2xl max-sm:text-xl'>
+    <div ref={bottomtext} className='lg:h-[30vh]  sm:h-[50vh]  w-full font-light lg:p-10 max-sm:p-3 text-black flex lg:text-2xl max-sm:text-l'>
       <div className='w-1/2 pt-10  border-t-1' >
         <h1>Tomorrow’s <br /> brands, today.</h1>
       </div>
-      <div className='w-1/2 pt-10 font-light border-t-1 flex flex-col gap-10 max-sm:leading-snug max-sm:text-[20px]' >
+      <div className='w-1/2 pt-10 font-light border-t-1 flex flex-col gap-10 max-sm:leading-snug' >
         <h1>
 We partner with five clients a year to deliver unmatched focus, and impact. Every detail is carefully crafted, every decision strategic, and every outcome transformative.</h1>
        

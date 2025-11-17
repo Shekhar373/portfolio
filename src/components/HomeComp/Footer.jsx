@@ -51,8 +51,8 @@ const Footer = () => {
     })
     return (
         <div className=' foot-main h-screen w-full text-white bg-black relative overflow-hidden'>
-            <div className=' foot-nav h-[18%]  flex justify-between items-center p-10'>
-                <div className='text-[3.5vw]'>
+            <div className=' foot-nav h-[18%]  flex justify-between items-center lg:p-10 max-sm:p-3'>
+                <div className='lg:text-[3.5vw] max-sm:text-xl'>
                     <h1>Do it once. Do it right.</h1>
                 </div>
                 <div className='flex gap-3 lg:flex max-sm:hidden '>
@@ -67,18 +67,18 @@ const Footer = () => {
                     <h2>Twitter</h2>
                 </div>
             </div>
-            <div className=' foot-mid mt-7 p-10 flex flex-col gap-9'>
+            <div className=' foot-mid mt-7 lg:p-10 max-sm:p-3 flex flex-col gap-9'>
                 <div>
                     <h2>New Business</h2>
                     <h2>hello@rejoice.com</h2>
                 </div>
                 <div>
                     <input
-                        className='border-b-2 w-[20%] p-2'
+                        className='border-b-2 lg:w-[20%] max-sm:w-[90%] p-2'
                         type="text" placeholder='Email' />
                 </div>
             </div>
-            <div className=' rejoice-foot text-[22vw] text-center text-white absolute bottom-0 lg:mt-16 '>
+            <div className=' rejoice-foot text-[22vw] text-center ml-5 text-white absolute bottom-0 lg:mt-16 '>
                 <h1 className='font-sans'>REJOUICE</h1>
             </div>
 
