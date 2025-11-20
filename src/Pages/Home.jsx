@@ -16,7 +16,7 @@ import Footer from '../components/HomeComp/Footer'
 const Home = () => {
   return (
     <div data-scroll-container className='bg-white overflow-x-hidden'>
-        {/* <Loader /> */}
+        <Loader />
         <Navbar />
         <Reel />
         <Text1 />

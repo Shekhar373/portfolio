@@ -33,8 +33,9 @@ const Footer = () => {
             }
         })
 
-        gsap.from(".rejoice-foot", {
-            x: 50,
+        gsap.from(".rejoice-foot h1 span", {
+            y: -50,
+            stagger:0.1,
             duration: 0.7,
             opacity: 0,
             scrollTrigger: {
@@ -79,7 +80,16 @@ const Footer = () => {
                 </div>
             </div>
             <div className=' rejoice-foot text-[22vw] text-center ml-5 text-white absolute bottom-0 lg:mt-16 '>
-                <h1 className='font-sans'>REJOUICE</h1>
+                <h1 className='font-sans'>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>J</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>I</span>
+                    <span>C</span>
+                    <span>E</span>
+                </h1>
             </div>
 
         </div>

@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: rejoy;
-    src: url(./assets/SuisseIntl-Regular.woff2);
+span{
+    display: inline-block;
+}
+
+::selection{
+    color: white;
+    background-color: black;
 }

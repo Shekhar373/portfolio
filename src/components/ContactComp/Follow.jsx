@@ -10,7 +10,7 @@ const Follow = () => {
         <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">FB</a>
         <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">IG</a>
         <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">IN</a>
-        <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">BE</a>
+        <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">X</a>
       </div>
     </div>
   )

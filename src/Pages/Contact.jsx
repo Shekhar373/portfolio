@@ -1,6 +1,7 @@
 
 import ContactMain from '../components/ContactComp/ContactMain'
 import Fixed from '../components/HomeComp/Fixed'
+import Footer from '../components/HomeComp/Footer'
 
 
 const Contact = () => {
@@ -9,7 +10,7 @@ const Contact = () => {
       <Fixed />
       <ContactMain />
       <ContactMain />
-      <ContactMain />
+      <Footer />
       
     </div>
   )

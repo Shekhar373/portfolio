@@ -2,23 +2,21 @@ import React from 'react'
 import WorkNav from '../components/WorkComp/WorkNav'
 import ServiceHead from '../components/ServicesComp/ServiceHead'
 import ServiceCard from '../components/ServicesComp/ServiceCard'
+import Footer from '../components/HomeComp/Footer'
 
 const Services = () => {
   return (
-    <div>
-      <div>
+   
+      <div className='overflow-x-hidden'>
         <WorkNav />
-
-      </div>
-      <div className=''>
+      
         <ServiceHead />
         <ServiceCard />
+        <Footer />
        
       </div>
-      <div className='h-[80vh]'>
-
-      </div>
-    </div>
+     
+  
 
 
   )

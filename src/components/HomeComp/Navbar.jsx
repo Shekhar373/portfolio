@@ -9,10 +9,10 @@ const Navbar = () => {
     tl.from(".rejouice h1 span",{
       
       duration: 0.3,
-      x: 500,
+      y: 200,
       opacity: 0,
       stagger: 0.1,
-      delay: 1
+      delay: 2.5
     })
     tl.from(".navfoot",{
       y:-30,
@@ -26,8 +26,8 @@ const Navbar = () => {
       <Fixed />
       <div>
         
-        <div className=' rejouice text-[23vw] absolute top-20 text-white text-center lg:-mt-28 '>
-          <h1 className='font-sans'>
+        <div className=' rejouice text-[23vw] border-0 overflow-hidden whitespace-nowrap absolute top-20 text-white text-center lg:-mt-28 '>
+          <h1  className='font-sans '>
             <span>R</span>
             <span>E</span>
             <span>J</span>

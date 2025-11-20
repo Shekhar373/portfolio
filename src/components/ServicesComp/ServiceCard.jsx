@@ -25,7 +25,6 @@ const ServiceCard = () => {
                     // markers: true,
                     start: "top 0",
                     end: "bottom 0",
-
                     scrub: 1
                 }
             })
@@ -41,7 +40,7 @@ const ServiceCard = () => {
 
             {arr.map((arr, index) => {
 
-                return <div id={index} className='service-card sticky top-0 bg-white'>
+                return <div id={index} className='service-card sticky top-0 bg-white '>
                     <div className=' h-screen w-full  '>
                         <div className='lg:h-[10%] max-sm:h-[5%] w-full border-b-2 '>
 

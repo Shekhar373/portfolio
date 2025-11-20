@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import Work from './Pages/Work'
 import Services from './Pages/Services'
 import Contact from './Pages/Contact'
+import Loader from './components/HomeComp/Loader'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ requestAnimationFrame(raf);
   })
   return (
     <div>
+     
     
     <Routes>
       <Route path='/' element={<Home />} />
