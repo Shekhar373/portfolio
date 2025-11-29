@@ -79,7 +79,7 @@ const Footer = () => {
                         type="text" placeholder='Email' />
                 </div>
             </div>
-            <div className=' rejoice-foot text-[22vw] text-center ml-5 text-white absolute bottom-0 lg:mt-16 '>
+            <div className=' rejoice-foot text-[22vw] text-center lg:ml-5 text-white absolute bottom-0 lg:mt-16 '>
                 <h1 className='font-sans'>
                     <span>R</span>
                     <span>E</span>

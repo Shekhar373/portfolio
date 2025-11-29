@@ -1,33 +1,81 @@
 import React, { useRef } from 'react'
-import Image from './Image'
+
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+
+
 
 const Hightlight = () => {
-    const image = useRef(null)
-    const video = useRef(null)
-    
-    
+  gsap.registerPlugin(ScrollTrigger)
+      useGSAP(()=>{
+        gsap.to(".left-move img",{
+            x:-80,
+            scrollTrigger:{
+               trigger:".move-parent",
+            //    markers:true,
+               start:"top 30%",
+        
+               scrub:1
+            }
+        })
+        gsap.to(".left-move video",{
+            x:-100,
+            scrollTrigger:{
+               trigger:".move-parent",
+            //    markers:true,
+               start:"top 60%",
+        
+               scrub:1
+            }
+        })
+        gsap.to(".right-move img",{
+            x:100,
+            scrollTrigger:{
+               trigger:".move-parent",
+            //    markers:true,
+               start:"top 60%",
+        
+               scrub:1
+            }
+        })
+        gsap.to(".right-move video",{
+            x:100,
+            scrollTrigger:{
+               trigger:".move-parent",
+            //    markers:true,
+               start:"top 30%",
+        
+               scrub:1
+            }
+        })
+      })
+
 
     return (
-        <div className='flex flex-col gap-3 bg-black'>
-            <div className='lg:h-[110vh] max-sm:h-[40vh] w-full flex flex-col justify-center items-center'>
-                <div className='text-white flex  w-full px-10 mb-14 justify-between items-center  '>
-                    <h1>Hightlight</h1>
-                    <h1>See the work</h1>
+        <div className='move-parent h-[150vh] relative w-full bg-black'>
+            <div className=' flex h-[130vh] '>
+                <div className='h-screen absolute w-full flex justify-center items-center'>
+                    <img className='h-[80vh] w-[30vw] object-cover '
+                        src="https://a.storyblok.com/f/133769/748x1278/5784aa7150/home-news-1.jpg/m/440x752/filters:quality(90)" alt="" />
                 </div>
-                <div  className='h-[90vh] w-[95vw] flex justify-center items-center relative  object-cover'>
-                    <img 
-                        className='relative   transition-all z-20' src="https://images.prismic.io/rejouice-2024/Z1r5Y5bqstJ98aaF_rivian.jpg?auto=format,compress&w=2418&h=1390&fm=avif" alt="" />
-                    <video ref={video} autoPlay loop muted
-                        className='h-[50vh] w-[40vw] hover:z-30 transition-all absolute z-10'
-                        src="https://www.rejouice.com/static/reel-short.mp4"></video>
+
+                <div className=' left-move h-full w-1/2  absolute'>
+                    <video muted loop autoPlay className='h-[27vh] w-[33vw] absolute top-56 left-48'
+                        src="https://rejouice-2024.cdn.prismic.io/rejouice-2024/Z2BbT5bqstJ98kk6_REJOUICE-PORTFOLIO-LOOP-PROJECTS.mp4" alt="" />
+
+                    <img className='h-[30vh] w-[25vw] object-fit absolute bottom-60 left-40'
+                        src="https://a.storyblok.com/f/133769/758x508/8a1ff60d00/home-news-4.jpg/m/1200x804/filters:quality(90)" alt="" />
+                </div>
+                <div className=' right-move h-full w-1/2  absolute right-0'>
+                    <img className='h-[35vh] w-[13vw] object-cover absolute left-32'
+                        src="https://a.storyblok.com/f/133769/348x494/21becfd449/home-news-3.jpg/m/700x994/filters:quality(90)" alt="" />
+
+                    <video muted loop autoPlay className='h-[27vh] w-[33vw] absolute bottom-96 left-20'
+                        src="https://rejouice-2024.cdn.prismic.io/rejouice-2024/Z2BbT5bqstJ98kk6_REJOUICE-PORTFOLIO-LOOP-PROJECTS.mp4" alt="" />
                 </div>
             </div>
-            <div className='lg:h-[130vh] max-sm:h-[50vh] flex gap-7 m-8  bg-black'>
-                <Image />
-                <Image />
-            </div>
+
         </div>
     )
 }

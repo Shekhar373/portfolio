@@ -21,7 +21,7 @@ const Swiper = () => {
     })
   })
   return (
-    <div ref={swiperref} className='h-screen w-[360vw] relative flex'>
+    <div ref={swiperref} className=' h-screen w-[360vw] relative flex'>
         <div className='relative '>
           <img
           className='h-[70vh] w-[100vw] object-cover'

@@ -5,17 +5,17 @@ import gsap from 'gsap'
 
 const Navbar = () => {
   const tl = gsap.timeline()
-  useGSAP(()=> {
-    tl.from(".rejouice h1 span",{
-      
+  useGSAP(() => {
+    tl.from(".rejouice h1 span", {
+
       duration: 0.3,
       y: 200,
       opacity: 0,
       stagger: 0.1,
       delay: 2.5
     })
-    tl.from(".navfoot",{
-      y:-30,
+    tl.from(".navfoot", {
+      y: -30,
       opacity: 0,
       duration: 0.5
 
@@ -25,9 +25,9 @@ const Navbar = () => {
     <div className='h-[89vh] flex relative flex-col bg-black justify-between'>
       <Fixed />
       <div>
-        
+
         <div className=' rejouice text-[23vw] border-0 overflow-hidden whitespace-nowrap absolute top-20 text-white text-center lg:-mt-28 '>
-          <h1  className='font-sans '>
+          <h1 className='font-sans '>
             <span>R</span>
             <span>E</span>
             <span>J</span>
