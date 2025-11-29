@@ -10,7 +10,8 @@ const Text1 = () => {
     
     useGSAP(()=>{
       var split = SplitText.create(".firsttext h1",{
-        type:"lines"
+        type:"lines",
+        autoSplit:true
       })
 
       gsap.from(split.lines,{

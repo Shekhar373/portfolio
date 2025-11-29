@@ -28,22 +28,17 @@ const Footer = () => {
                 trigger: ".foot-main",
                 // markers: true,
                 start: "top 30%",
-
-
             }
         })
 
         gsap.from(".rejoice-foot h1 span", {
-            y: -50,
-            stagger:0.1,
-            duration: 0.7,
+            y: 300,
+            stagger: 0.05,
+            // duration: 0.7,
             opacity: 0,
             scrollTrigger: {
                 trigger: ".foot-main",
-
                 start: "top 10%",
-
-
             }
         })
 
@@ -80,7 +75,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className=' rejoice-foot text-[22vw] text-center lg:ml-5 text-white absolute bottom-0 lg:mt-16 '>
-                <h1 className='font-sans'>
+                <h1 className='font-sans overflow-clip'>
                     <span>R</span>
                     <span>E</span>
                     <span>J</span>
