@@ -2,11 +2,16 @@ import React from 'react'
 import Fixed from './Fixed'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { SplitText } from 'gsap/all'
 
 const Navbar = () => {
   const tl = gsap.timeline()
+  gsap.registerPlugin(SplitText)
   useGSAP(() => {
-    tl.from(".rejouice h1 span", {
+
+    
+
+    tl.from(".rejoice h1", {
 
       duration: 0.3,
       y: 200,
@@ -26,16 +31,15 @@ const Navbar = () => {
       <Fixed />
       <div>
 
-        <div className=' rejouice text-[23vw] border-0 overflow-hidden whitespace-nowrap absolute top-20 text-white text-center lg:-mt-28 '>
-          <h1 className='font-sans '>
-            <span>R</span>
+        <div className=' rejouice text-[23.7vw] overflow-hidden whitespace-nowrap absolute flex justify-center top-20  lg:-mt-28 '>
+          <h1 className='font-sans bg-linear-to-b from-gray-300 to-gray-900 bg-clip-text text-transparent '>
+            {/* <span>N</span>
             <span>E</span>
-            <span>J</span>
-            <span>O</span>
+            <span>W</span>
+            <span>H</span>
             <span>U</span>
-            <span>I</span>
-            <span>C</span>
-            <span>E</span>
+            <span>W</span> */}
+            NEWHUE
           </h1>
         </div>
       </div>

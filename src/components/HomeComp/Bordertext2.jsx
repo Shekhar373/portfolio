@@ -22,7 +22,7 @@ const BorderText2 = () => {
       scrollTrigger: {
         trigger: bottomtext.current,
         // markers: true,
-        start: "top 60%"
+        start: "top 80%"
       }
     })
   })
