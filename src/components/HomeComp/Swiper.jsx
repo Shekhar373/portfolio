@@ -54,7 +54,7 @@ const Swiper = () => {
             <div className='h-[50%] w-screen text-[10vw] mt-20 pl-10'>
               <h1>Projects</h1>
             </div>
-            <div className='h-[50%] w-screen text-6xl px-10'>
+            <div className='h-[50%] w-screen lg:text-6xl sm:text-2xl  px-10'>
               <h1>These are not just projects, they are stories of our clients, our work, and the impact we made. <Link className='uppercase font-medium ' to="/work">See More</Link></h1>
               
             </div>
