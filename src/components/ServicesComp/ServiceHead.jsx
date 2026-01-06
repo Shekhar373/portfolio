@@ -33,7 +33,7 @@ const ServiceHead = () => {
 
   return (
     <div>
-      <div className=' service lg:text-[10vw] max-sm:text-[15vw] border-0 overflow-hidden font-medium lg:px-10 max-sm:px-3'>
+      <div className=' service lg:text-[10vw] max-sm:text-[15vw] md:text-[13vw] md:p-10 border-0 overflow-hidden font-medium lg:px-10 max-sm:px-3'>
         <h1>
           <span>S</span>
           <span>E</span>

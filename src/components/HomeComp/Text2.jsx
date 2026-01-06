@@ -5,7 +5,7 @@ import BorderText2 from './Bordertext2'
 const Text2 = () => {
   return (
     <div className='lg:h-screen max-sm:h-[70vh] w-full bg-white text-black'>
-      <div className='lg:text-[3vw] sm:text-2xl lg:p-8 max-sm:p-3 font-light '>
+      <div className='lg:text-[3vw] md:p-5 sm:text-2xl lg:p-8 max-sm:p-3 font-light '>
         <h1>Our approach.</h1>
       </div>
       <div >

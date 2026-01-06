@@ -9,7 +9,7 @@ const Navbar = () => {
   gsap.registerPlugin(SplitText)
   useGSAP(() => {
 
-    
+
 
     tl.from(".rejoice h1", {
 
@@ -31,19 +31,13 @@ const Navbar = () => {
       <Fixed />
       <div>
 
-        <div className=' rejouice text-[23.7vw] overflow-hidden whitespace-nowrap absolute flex justify-center top-20  lg:-mt-28 '>
+        <div data-speed="0.7" className=' rejouice text-[23.7vw] overflow-hidden whitespace-nowrap absolute flex justify-center top-10  lg:-mt-28 '>
           <h1 className='font-sans bg-linear-to-b from-gray-300 to-gray-900 bg-clip-text text-transparent '>
-            {/* <span>N</span>
-            <span>E</span>
-            <span>W</span>
-            <span>H</span>
-            <span>U</span>
-            <span>W</span> */}
             NEWHUE
           </h1>
         </div>
       </div>
-      <div className=' text-white flex gap-20 absolute bottom-0  lg:p-10 max-sm:p-3 mt-12'>
+      <div className=' text-white flex gap-20 md:p-10 absolute bottom-0  lg:p-10 max-sm:p-3 mt-12'>
         <h3 className='navfoot '>Strategy,Design, <br />Performence</h3>
         <h3 className='navfoot'>Global Creative <br />And Creative Agency</h3>
       </div>

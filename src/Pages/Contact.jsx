@@ -9,7 +9,6 @@ const Contact = () => {
     <div className='bg-black overflow-x-hidden'>
       <Fixed />
       <ContactMain />
-      {/* <ContactMain /> */}
       <Footer />
       
     </div>

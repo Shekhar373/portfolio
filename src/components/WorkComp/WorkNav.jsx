@@ -19,7 +19,7 @@ const WorkNav = () => {
     return (
 
         <div>
-            <div className='worknav flex justify-between font-medium lg:p-10 max-sm:p-3 text-black'>
+            <div className='worknav flex justify-between font-medium md:p-10 lg:p-10 max-sm:p-3 text-black'>
                 <div className='cursor-pointer'>
                     <Link className='hover:border-b-1 transition-all' to="/">The Growth Accelerator</Link>
 

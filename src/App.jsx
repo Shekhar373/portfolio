@@ -7,34 +7,34 @@ import Work from './Pages/Work'
 import Services from './Pages/Services'
 import Contact from './Pages/Contact'
 import Loader from './components/HomeComp/Loader'
+import { ScrollSmoother } from 'gsap/all'
+import gsap from 'gsap'
 
 
 const App = () => {
-  useEffect(()=> {
-    // Initialize Lenis
-const lenis = new Lenis();
 
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
+  gsap.registerPlugin(ScrollSmoother)
 
-requestAnimationFrame(raf);
+  useEffect(() => {
+    let smoother = ScrollSmoother.create({
+      smooth: 1.5,
+      effects: true,
+      normalizeScroll: true
+    });
   })
+
   return (
-    <div>
-     
-    
-    <Routes>
+    <div id='smooth-wrapper'>
+      <div id='smooth-content'>
+         <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/work' element={<Work />} />
       <Route path='/about' element={<About />} />
       <Route path='/services' element={<Services />} />
       <Route path='/contact' element={<Contact />} />
     </Routes>
-      
-    </div>
+      </div>
+     </div>
     
   )
 }

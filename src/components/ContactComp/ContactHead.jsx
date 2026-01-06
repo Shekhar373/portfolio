@@ -9,7 +9,7 @@ const ContactHead = () => {
                     Here. There. <br />
                     Anywhere.</h1>
             </div>
-            <div className='text-[10vw] text-center lg:leading-28 max-sm:leading-16'>
+            <div className='text-[10vw] text-center lg:leading-28 max-sm:leading-16 md:leading-24'>
                 <h1>TO TALK <br /> ABOUT  <br /> YOUR <br /> PROJECT</h1>
             </div>
             <div className='text-center flex font-medium flex-col justify-end'>

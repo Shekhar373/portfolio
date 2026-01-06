@@ -67,10 +67,10 @@ const ServiceCard = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='h-full lg:w-1/2 max-sm:w-full '>
-                                <div className='lg:pl-16 lg:pt-2 max-sm:ml-[5vw] max-sm:mt-12 '>
+                            <div className='h-full md:flex md:justify-center md:pt-20 lg:w-1/2 max-sm:w-full '>
+                                <div className='lg:pl-16 lg:pt-2 max-sm:ml-[5vw] md:items-center md:flex md:justify-center max-sm:mt-12 '>
                                     <img
-                                        className='lg:h-[50%] lg:w-[42vw] max-sm:h[90%] max-sm:w-[90%] object-cover'
+                                        className='lg:h-[50%] lg:w-[42vw] max-sm:h[90%] max-sm:w-[90%]  object-cover'
                                         src="https://cdn.sanity.io/images/y7n60qgt/production/74fc7330a6ff90ade9ebb434088fbd6b16b7b602-1140x642.jpg?w=800&fm=webp" alt="" />
                                 </div>
                             </div>

@@ -11,16 +11,19 @@ const BorderText = () => {
   useGSAP(() => {
     let splitt = SplitText.create("#secondtext h1", {
 
-      type: "lines",
-      mask:"lines"
+      type: "chars",
+      mask:"chars"
      
     }
     )
 
-    gsap.from(splitt.lines, {
+    gsap.from(splitt.chars, {
       y: 150,
+      rotateX:80,
       stagger: {
-        amount:0.3
+        amount: 0.3,
+        from: "start",
+        ease: "Power3.in"
       },
       scrollTrigger: {
         trigger: bordertext.current,
@@ -32,7 +35,7 @@ const BorderText = () => {
 
 
   return (
-    <div ref={bordertext} className=' lg:h-[90vh] md:h-[40vh] bg-black max-sm:h-[60vh] w-full font-light lg:p-10 max-sm:p-3 text-white flex lg:text-3xl max-sm:text-2xl'>
+    <div ref={bordertext} className=' lg:h-[90vh] md:h-[40vh] md:px-10 bg-black max-sm:h-[60vh] w-full font-light lg:p-10 max-sm:p-3 text-white flex lg:text-3xl max-sm:text-2xl'>
       <div id='secondtext' className=' w-1/2 pt-10  border-t-1' >
         <h1 >Tomorrow’s <br /> brands, today.</h1>
       </div>

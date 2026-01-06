@@ -2,6 +2,8 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
+
 
 const Swiper = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -48,8 +50,14 @@ const Swiper = () => {
            </div>
         </div>
 
-        <div className='h-[100vh] w-[100vw] flex justify-center bg-amber-50 items-center text-[11vw] '>
-            <h1>PROJECTS</h1>
+        <div className='h-[100vh] w-[100vw] flex    flex-col '>
+            <div className='h-[50%] w-screen text-[10vw] mt-20 pl-10'>
+              <h1>Projects</h1>
+            </div>
+            <div className='h-[50%] w-screen text-6xl px-10'>
+              <h1>These are not just projects, they are stories of our clients, our work, and the impact we made. <Link className='uppercase font-medium ' to="/work">See More</Link></h1>
+              
+            </div>
         </div>
     </div>
   )

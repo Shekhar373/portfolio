@@ -8,3 +8,19 @@ span{
     color: #FF3503;
     background-color: #3D1309;
 }
+
+.border-animate::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width .3s;
+
+}
+
+.border-animate:hover::after{
+    width: 100%;
+    transition: width .3s;
+
+}
