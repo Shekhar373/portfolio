@@ -9,8 +9,8 @@ const WorkCard = () => {
   gsap.registerPlugin(ScrollTrigger)
 
   const WorkImage = [{
-    image1: '/public/projects/club/La-Vella-Cover.jpg',
-    image2: 'https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_1280x960-1280x960.jpg'
+    image1: '/projects/club/La-Vella-Cover.jpg',
+    image2: '/projects/bakery/Ahuja-bakery-Cover.jpg'
   }, {
     image1: 'https://k72.ca/uploads/caseStudies/OKA/OKA_thumbnail-1280x960.jpg',
     image2: 'https://k72.ca/uploads/caseStudies/Opto/thumbnailimage_opto-1280x960.jpg'
