@@ -11,6 +11,7 @@ import Text2 from '../components/HomeComp/Text2'
 import Video from '../components/HomeComp/Video'
 import KnowUs from '../components/HomeComp/KnowUs'
 import Footer from '../components/HomeComp/Footer'
+import NewFooter from '../components/common/NewFooter'
 
 
 const Home = () => {
@@ -28,7 +29,8 @@ const Home = () => {
         <Text2 />
         <Video />
         <KnowUs />
-        <Footer />
+        {/* <Footer /> */}
+        <NewFooter />
     </div>
   )
 }

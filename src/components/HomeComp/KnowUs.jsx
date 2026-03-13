@@ -13,18 +13,16 @@ const KnowUs = () => {
       type: "chars, words"
     })
 
+    // Slow down by increasing the range of scroll (make end further)
     const scrollTween = gsap.to(horiscroll.current, {
-      // transform: "translateX(-150%)",
       xPercent: -150,
-
       scrollTrigger: {
         trigger: horiscroll.current,
         // markers: true,
         start: "top 0%",
-        end: "top -150%",
-       
+        end: "top -400%", // was -150%, now much longer scroll distance
         pin: true,
-        scrub: 3
+        scrub: 2 // was 3, you may increase even to 4 or 5, but with a longer scroll it's already much slower
       }
     })
 

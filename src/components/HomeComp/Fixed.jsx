@@ -11,7 +11,7 @@ const Fixed = () => {
     <div>
       <div className='nav relative flex justify-between p-5 lg:p-10 max-sm:p-3 md:p-10 text-white'>
           <div className='cursor-pointer fixed mix-blend-difference z-40 '>
-            <Link className=' transition-all' to="/">The Growth Accelerator</Link>
+            <Link className=' transition-all' to="/">NEW HUE STUDIO</Link>
 
           </div>
           <div className='md:flex gap-3 lg:flex fixed lg:right-72 md:right-40 z-40 mix-blend-difference cursor-pointer hidden sm:hidden'>

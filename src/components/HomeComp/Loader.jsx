@@ -21,7 +21,7 @@ const Loader = () => {
         tl.to(".loader", {
             //  opacity: 0,
             duration: 0.7,
-            ease: "power4.out",
+            ease: "expo.inOut",
             y: -700,
             display: "none",
 
@@ -30,7 +30,7 @@ const Loader = () => {
 
     })
     return (
-        <div className=' fixed z-50 loader h-screen w-full bg-black text-white flex justify-center items-center gap-2 text-3xl font-medium'>
+        <div className=' fixed z-50 loader h-screen w-full bg-white text-black flex justify-center items-center gap-2 text-3xl font-medium'>
             <h3>Tomorrow's</h3>
             <h3>Brand,</h3>
             <h3>Today</h3>

@@ -28,7 +28,7 @@ const App = () => {
   return (
     <>
       <nav>
-        <Loader />
+        {/* <Loader /> */}
       <Fixed />
       </nav>
       <div id='smooth-wrapper'>
