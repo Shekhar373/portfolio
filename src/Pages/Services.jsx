@@ -8,7 +8,7 @@ const Services = () => {
   return (
    
       <div className='overflow-x-hidden'>
-        <WorkNav />
+        {/* <WorkNav /> */}
       
         <ServiceHead />
         <ServiceCard />

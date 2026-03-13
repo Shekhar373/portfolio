@@ -4,6 +4,19 @@ span{
     display: inline-block;
 }
 
+
+@font-face{
+    font-family: 'text-font';
+    src: url('./assets/fonts/Azeret_Mono/AzeretMono-Regular.ttf'),
+         url('./assets/fonts/Azeret_Mono/AzeretMono-Regular.woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+body{
+    font-family: 'text-font', sans-serif;
+    font-weight: 200;
+}
 ::selection{
     color: #FF3503;
     background-color: #3D1309;
@@ -16,10 +29,26 @@ span{
     height: 1px;
     background: white;
     transition: width .3s;
+    
 
 }
 
 .border-animate:hover::after{
+    width: 100%;
+    transition: width .3s;
+
+}
+
+.border-animate-black::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: black;
+    transition: width .3s;
+    
+}
+.border-animate-black:hover::after{
     width: 100%;
     transition: width .3s;
 

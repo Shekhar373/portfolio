@@ -40,14 +40,14 @@ const ServiceCard = () => {
 
             {arr.map((arr, index) => {
 
-                return <div id={index} className='service-card  sticky top-0 bg-white '>
+                return <div id={index} className='service-card bg-white '>
                     <div className=' h-screen w-full '>
                         <div className='lg:h-[10%] max-sm:h-[5%] w-full border-b-2 '>
 
                         </div>
                         <div className='lg:h-[20%] max-sm:h-[10%] flex justify-center  lg:mb-[10vh] items-center   tracking-tighter font-medium'>
                             <h3 className=''>01</h3>
-                            <h1 className='text-[10vw]'>{arr}</h1>
+                            <h1 className='text-[8vw]'>{arr}</h1>
                         </div>
                         <div className='lg:h-[60%] max-sm:h-[55%] w-full lg:flex  '>
                             <div className='h-full lg:w-1/2 max-sm:w-full  px-10'>

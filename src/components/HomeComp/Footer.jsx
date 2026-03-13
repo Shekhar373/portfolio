@@ -51,7 +51,7 @@ const Footer = () => {
     })
     return (
         <div className=' foot-main h-screen w-full text-white bg-black relative overflow-hidden'>
-            <div className=' foot-nav h-[18%]  flex justify-between items-center lg:p-10 max-sm:p-3'>
+            <div className=' foot-nav h-[18%] flex justify-between items-center p-5 lg:p-10'>
                 <div className='lg:text-[3.5vw] md:p-10 max-sm:text-xl'>
                     <h1>Do it once. Do it right.</h1>
                 </div>
@@ -63,11 +63,11 @@ const Footer = () => {
                     <Link className='border-animate' to="/contact">Contact</Link>
                 </div>
                 <div className=' md:p-10'>
-                    <a  href="https://www.instagram.com/newhuestudio.1/?igsh=dWpkNDl6dmRuNHE%3D&utm_source=qr#" target="_blank" rel="noopener noreferrer" className='border-animate'>INSTAGRAM</a>
+                    <a  href="https://www.instagram.com/newhuestudio.1/?igsh=dWpkNDl6dmRuNHE%3D&utm_source=qr#" target="_blank" rel="noopener noreferrer" className='border-animate'>instagram</a>
                     <h2 className='border-animate inline-block'>Twitter</h2>
                 </div>
             </div>
-            <div className=' foot-mid mt-7 lg:p-10 max-sm:p-3 md:p-10 flex flex-col gap-9'>
+            <div className=' foot-mid mt-7 p-3 lg:p-10 max-sm:p-3 md:p-10 flex flex-col gap-9'>
                 <div>
                     <h2>New Business</h2>
                     <h2 className='border-animate inline-block'>hello@rejoice.com</h2>
@@ -78,8 +78,9 @@ const Footer = () => {
                         type="text" placeholder='Email' />
                 </div>
             </div>
-            <div className=' rejoice-foot text-[22.7vw] text-center lg:ml-5 text-white absolute lg:-bottom-20 md:left-5 max-sm:bottom-0 md:bottom-10  lg:mt-16 '>
-                <h1 className='font-sans overflow-clip'>
+            <div className=' rejoice-foot text-[22.7vw]'>
+                <div className='text-white text-center leading-[25vw]'>
+                    <h1 className='font-sans font-normal'>
                     <span>N</span>
                     <span>E</span>
                     <span>W</span>
@@ -87,6 +88,7 @@ const Footer = () => {
                     <span>U</span>
                     <span>E</span>
                 </h1>
+                </div>
             </div>
 
         </div>

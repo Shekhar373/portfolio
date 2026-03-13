@@ -7,7 +7,7 @@ import Footer from '../components/HomeComp/Footer'
 const Contact = () => {
   return (
     <div className='bg-black overflow-x-hidden'>
-      <Fixed />
+      {/* <Fixed /> */}
       <ContactMain />
       <Footer />
       

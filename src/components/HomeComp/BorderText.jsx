@@ -18,17 +18,17 @@ const BorderText = () => {
     )
 
     gsap.from(splitt.chars, {
-      y: 150,
-      rotateX:80,
+      opacity: 0,
+      yPercent: 120,
+      ease: "power",
       stagger: {
-        amount: 0.3,
-        from: "start",
-        ease: "Power3.in"
+        amount: 0.1
       },
       scrollTrigger: {
         trigger: bordertext.current,
         // markers: true,
-        start: "top 40%"
+        start: "top 40%",
+        toggleActions: "play none none reverse"
       }
     })
   })

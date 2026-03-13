@@ -21,19 +21,19 @@ const WorkNav = () => {
         <div>
             <div className='worknav flex justify-between font-medium md:p-10 lg:p-10 max-sm:p-3 text-black'>
                 <div className='cursor-pointer'>
-                    <Link className='hover:border-b-1 transition-all' to="/">The Growth Accelerator</Link>
+                    <Link to="/">The Growth Accelerator</Link>
 
                 </div>
                 <div className='flex gap-3 lg:flex  max-sm:hidden '>
-                    <Link className='hover:border-b-1 transition-all' to="/">Home</Link>
-                    <Link className='hover:border-b-1 transition-all' to="/work">Work</Link>
-                    <Link className='hover:border-b-1 transition-all' to="/about">About</Link>
-                    <Link className='hover:border-b-1 transition-all' to="/services">Services</Link>
-                    <Link className='hover:border-b-1 transition-all' to="/contact">Contact</Link>
+                    <Link className='border-animate-black' to="/">Home</Link>
+                    <Link className='border-animate-black' to="/work">Work</Link>
+                    <Link className='border-animate-black' to="/about">About</Link>
+                    <Link className='border-animate-black' to="/services">Services</Link>
+                    <Link className='border-animate-black' to="/contact">Contact</Link>
                     
                 </div>
                 <div  className='cursor-pointer'>
-                    <Link className='hover:border-b-1 transition-all' to="/contact">Let's Talk</Link>
+                    <Link className='border-animate-black' to="/contact">Let's Talk</Link>
                 </div>
 
             </div>

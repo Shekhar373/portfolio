@@ -9,6 +9,8 @@ import Contact from './Pages/Contact'
 import Loader from './components/HomeComp/Loader'
 import { ScrollSmoother } from 'gsap/all'
 import gsap from 'gsap'
+import Navbar from './components/HomeComp/Navbar'
+import Fixed from './components/HomeComp/Fixed'
 
 
 const App = () => {
@@ -24,18 +26,24 @@ const App = () => {
   })
 
   return (
-    <div id='smooth-wrapper'>
-      <div id='smooth-content'>
-         <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/work' element={<Work />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/services' element={<Services />} />
-      <Route path='/contact' element={<Contact />} />
-    </Routes>
+    <>
+      <nav>
+        <Loader />
+      <Fixed />
+      </nav>
+      <div id='smooth-wrapper'>
+        <div id='smooth-content'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/work' element={<Work />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/services' element={<Services />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </div>
       </div>
-     </div>
-    
+    </>
+
   )
 }
 

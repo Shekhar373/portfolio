@@ -1,5 +1,4 @@
 import React from 'react'
-import Fixed from './Fixed'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap/all'
@@ -28,16 +27,16 @@ const Navbar = () => {
   })
   return (
     <div className='h-[89vh] flex relative flex-col bg-black justify-between'>
-      <Fixed />
+      
       <div>
 
-        <div data-speed="0.7" className=' rejouice text-[23.7vw] overflow-hidden whitespace-nowrap absolute flex justify-center top-10  lg:-mt-28 '>
-          <h1 className='font-sans bg-linear-to-b from-gray-300 to-gray-900 bg-clip-text text-transparent '>
+        <div data-speed="0.5" className=' rejouice text-[23.7vw] overflow-hidden text-center leading-[20vw]'>
+          <h1 className='font-sans font-normal text-white'>
             NEWHUE
           </h1>
         </div>
       </div>
-      <div className=' text-white flex gap-20 md:p-10 absolute bottom-0  lg:p-10 max-sm:p-3 mt-12'>
+      <div className=' text-white flex gap-20 p-5 md:p-10 absolute bottom-0  lg:p-10 max-sm:p-3 mt-12'>
         <h3 className='navfoot '>Strategy,Design, <br />Performence</h3>
         <h3 className='navfoot'>Global Creative <br />And Creative Agency</h3>
       </div>

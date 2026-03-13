@@ -1,5 +1,5 @@
 import React from 'react'
-import Loader from "../components/HomeComp/Loader"
+
 import Navbar from '../components/HomeComp/Navbar'
 import Reel from '../components/HomeComp/Reel'
 import Text1 from '../components/HomeComp/Text1'
@@ -16,7 +16,8 @@ import Footer from '../components/HomeComp/Footer'
 const Home = () => {
   return (
     <div data-scroll-container className='bg-white overflow-x-hidden'>
-        <Loader />
+
+       
         <Navbar />
         <Reel />
         <Text1 />

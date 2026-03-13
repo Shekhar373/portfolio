@@ -21,7 +21,7 @@ const Loader = () => {
         tl.to(".loader", {
             //  opacity: 0,
             duration: 0.7,
-            ease: "power4.in",
+            ease: "power4.out",
             y: -700,
             display: "none",
 
