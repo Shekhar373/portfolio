@@ -62,17 +62,17 @@ const Hightlight = () => {
 
                 <div className=' left-move h-full w-1/2  absolute'>
                     <video muted loop autoPlay className='h-[27vh] w-[33vw] absolute lg:top-56 top-48 lg:left-48 left-20'
-                        src="/public/video/video2.mp4" alt="" />
+                        src="/video/video2.mp4" alt="" />
 
                     <img className='lg:h-[30vh] h-[20vh] lg:w-[25vw] w-[35vw] object-fit absolute lg:bottom-60 bottom-20  lg:left-40 left-20'
-                        src="/public/images/8.jpg" alt="" />
+                        src="/images/8.jpg" alt="" />
                 </div>
                 <div className=' right-move h-full w-1/2  absolute right-0'>
                     <img className='lg:h-[30vh] h-[20vh] lg:w-[25vw] w-[35vw] object-cover absolute lg:top-20 top-40 lg:left-32 right-20'
-                        src="/public/images/1.jpg" alt="" />
+                        src="/images/1.jpg" alt="" />
 
                     <video muted loop autoPlay playsInline className='h-[27vh] w-[33vw] absolute lg:bottom-96 top-96 lg:left-20 right-15'
-                        src="/public/video/video1.mp4"  />
+                        src="/video/video1.mp4"  />
                 </div>
             </div>
 
