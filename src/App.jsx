@@ -11,6 +11,9 @@ import { ScrollSmoother } from 'gsap/all'
 import gsap from 'gsap'
 import Navbar from './components/HomeComp/Navbar'
 import Fixed from './components/HomeComp/Fixed'
+import NewLoader from './components/HomeComp/NewLoader'
+import ProjectDetails from './components/WorkComp/ProjectDetails'
+
 
 
 const App = () => {
@@ -28,6 +31,7 @@ const App = () => {
   return (
     <>
       <nav>
+        {/* <NewLoader /> */}
         {/* <Loader /> */}
       <Fixed />
       </nav>
@@ -36,6 +40,7 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/work' element={<Work />} />
+            <Route path="/work/:slug" element={<ProjectDetails />} />
             <Route path='/about' element={<About />} />
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />

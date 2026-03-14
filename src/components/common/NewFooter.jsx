@@ -14,7 +14,7 @@ export default function Footer() {
                 className="h-[80vh] w-[95%] rounded-xl bg-black text-white text-5xl sticky bottom-0"
 
             >
-                <div className="h-[50%] w-full flex ">
+                <div className="h-[60%] w-full flex ">
                     <div className="h-full w-1/2 text-4xl p-10">
                         <h1>DO IT ONCE, DO IT RIGHT</h1>
                         <div className="text-xl mt-10">
@@ -47,7 +47,7 @@ export default function Footer() {
 
                     </div>
                 </div>
-                <div className="h-[50%] w-full flex justify-center items-end bg-gradient-to-b from-zinc-700 to-zinc-950 bg-clip-text text-transparent ">
+                <div className="h-[40%] w-full flex justify-center items-end bg-gradient-to-b from-zinc-600 to-zinc-950 bg-clip-text text-transparent ">
                     <h1 className="text-[10vw] mb-5">NEW HUE STUDIO</h1>
                 </div>
             </footer>

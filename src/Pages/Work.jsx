@@ -5,6 +5,7 @@ import Footer from '../components/HomeComp/Footer'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import NewProjectCard from '../components/WorkComp/NewProjectCard'
 
 
 const Work = () => {
@@ -37,7 +38,8 @@ const Work = () => {
         </h1>
       </div>
       <div>
-        <WorkCard />
+        {/* <WorkCard /> */}
+        <NewProjectCard />
       </div>
       <div>
         <Footer />

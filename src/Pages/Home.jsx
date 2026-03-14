@@ -12,6 +12,7 @@ import Video from '../components/HomeComp/Video'
 import KnowUs from '../components/HomeComp/KnowUs'
 import Footer from '../components/HomeComp/Footer'
 import NewFooter from '../components/common/NewFooter'
+import NewHero from '../components/HomeComp/NewHero'
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
        
         <Navbar />
         <Reel />
+        {/* <NewHero /> */}
         <Text1 />
         <BorderText />
         <Hightlight />
