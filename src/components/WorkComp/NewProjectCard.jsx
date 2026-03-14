@@ -5,73 +5,34 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 
 const NewProjectCard = () => {
-
     gsap.registerPlugin(ScrollTrigger)
 
     useEffect(() => {
-
-        const panels = gsap.utils.toArray(".panel")
-
-        gsap.set(panels.slice(1), {
-            clipPath: "inset(100% 0% 0% 0%)"
-          })
-
-        const tl = gsap.timeline({
+      gsap.utils.toArray(".work-card-main").forEach((workcard) => {
+        gsap.from(workcard, {
+            scaleY: 0.2,
+            transformOrigin: "top",
             scrollTrigger: {
-                trigger: ".projects-container",
-                markers: true,
-                start: "top top",
-                end: `+=${panels.length * 100}%`,
-                scrub: 1,
-                pin: true
+              trigger: workcard,
+              start: "top 70%",
+              end: "bottom 10%",
+              scrub: true
             }
-        })
-
-        panels.forEach((panel, i) => {
-            if (i === 0) return
-
-            tl.to(panel, {
-                clipPath: "inset(0% 0% 0% 0%)",
-                duration: 1
-            })
-        })
-        // gsap.to(".panel img", {
-        //     scale: 1.1,
-        //     scrollTrigger: {
-        //         trigger: ".projects-container",
-        //         start: "top top",
-        //         end: "bottom top",
-        //         scrub: true
-        //     }
-        // })
-
+          })
+      })
     }, [])
 
-
-
     return (
-        <div className='h-[400vh]'>
-            <div className="projects-container h-screen w-full sticky top-0 overflow-hidden">
+        <div className='grid grid-cols-2 grid-rows-2 gap-5 p-10'>
 
-                {projects.map((project) => (
-
-                    <div className="panel absolute inset-0">
-                        <Link to={`/work/${project.slug}`} key={project.slug}>
-                            <img
-                                src={project.cover}
-                                className="w-full h-full object-cover"
-                            />
-
-                            <h1 className="absolute bottom-20 left-20 text-white text-6xl">
-                                {project.title}
-                            </h1>
-                        </Link>
+            {projects.slice(0, 4).map((project) => (
+                <Link to={`/work/${project.slug}`} key={project.slug}>
+                    <div className='work-card-main'>
+                        <img src={project.cover} alt={project.title} />
                     </div>
 
-                ))}
-
-            </div>
-
+                </Link>
+            ))}
         </div>
     )
 }

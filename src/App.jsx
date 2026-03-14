@@ -32,7 +32,7 @@ const App = () => {
     <>
       <nav>
         {/* <NewLoader /> */}
-        {/* <Loader /> */}
+        <Loader />
       <Fixed />
       </nav>
       <div id='smooth-wrapper'>
