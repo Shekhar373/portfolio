@@ -64,7 +64,7 @@ const Hightlight = () => {
                     <video muted loop autoPlay className='h-[27vh] w-[33vw] absolute lg:top-56 top-48 lg:left-48 left-20'
                         src="/video/video2.mp4" alt="" />
 
-                    <img className='lg:h-[30vh] h-[20vh] lg:w-[25vw] w-[35vw] object-fit absolute lg:bottom-60 bottom-20  lg:left-40 left-20'
+                    <img className='lg:h-[30vh] h-[20vh] lg:w-[25vw] w-[35vw] object-fit absolute lg:bottom-96 bottom-20  lg:left-40 left-20'
                         src="/images/8.jpg" alt="" />
                 </div>
                 <div className=' right-move h-full w-1/2  absolute right-0'>

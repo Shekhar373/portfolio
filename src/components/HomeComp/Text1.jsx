@@ -8,39 +8,36 @@ const Text1 = () => {
 
   const firsttext = useRef(null)
 
-  useGSAP(() => {
-    var split = SplitText.create(".firsttext h1", {
-      type: "chars",
-      mask: "chars"
-    })
+  // useGSAP(() => {
+  //   var split = SplitText.create(".firsttext h1", {
+  //     type: "chars",
+  //     mask: "chars"
+  //   })
 
-    gsap.from(split.chars, {
-      opacity: 0,
-      yPercent: 120,
-      ease: "power",
-      stagger: {
-        amount: 0.1
-      },
+  //   gsap.from(split.chars, {
+  //     opacity: 0,
+  //     yPercent: 120,
+  //     ease: "power",
+  //     stagger: {
+  //       amount: 0.1
+  //     },
 
-      scrollTrigger: {
-        trigger: firsttext.current,
-        // markers:true,
-        start: "top 50%",
-       toggleActions: "play none none reverse"
-      }
-    })
-  })
+  //     scrollTrigger: {
+  //       trigger: firsttext.current,
+  //       // markers:true,
+  //       start: "top 50%",
+  //      toggleActions: "play none none reverse"
+  //     }
+  //   })
+  // })
 
   return (
-    <div>
-      <div ref={firsttext} className='firsttext lg:h-[60vh] p-5 md:p-10 sm:h-[30vh] bg-black font-light leading-tight text-white lg:p-10 max-sm:pt-10 max-sm:p-3 max-sm:text-3xl text-[4vw]    '>
-        <h1>We turn founders visions into remarkable </h1>
-        <h1>brands by combining strategy, design, and</h1>
-        <h1>performance marketing, all under one roof.   Explore</h1>
-        <h1> our services.</h1>
-      </div>
 
+    <div ref={firsttext} className='text-2xl md:text-[2.5vw] h-[40vh] lg:h-[60vh] w-full bg-black text-white flex items-center p-5 lg:p-10'>
+      <h1> New Hue Studio is a full-service creative agency offering graphic design, video editing, motion graphics, social media marketing, performance advertising, and 3D websites. We mix creativity to build brands that stand out</h1>
     </div>
+
+
   )
 }
 

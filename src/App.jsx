@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Home from './Pages/Home'
 import About from './Pages/About'
-import Lenis from 'lenis'
 import { Route, Routes } from 'react-router-dom'
 import Work from './Pages/Work'
 import Services from './Pages/Services'
@@ -9,10 +8,10 @@ import Contact from './Pages/Contact'
 import Loader from './components/HomeComp/Loader'
 import { ScrollSmoother } from 'gsap/all'
 import gsap from 'gsap'
-import Navbar from './components/HomeComp/Navbar'
 import Fixed from './components/HomeComp/Fixed'
-import NewLoader from './components/HomeComp/NewLoader'
 import ProjectDetails from './components/WorkComp/ProjectDetails'
+import Layout from './components/common/Layout'
+import ScrollToTop from './components/common/ScrollToTop'
 
 
 
@@ -31,20 +30,22 @@ const App = () => {
   return (
     <>
       <nav>
-        {/* <NewLoader /> */}
         <Loader />
-      <Fixed />
+        <Fixed />
       </nav>
       <div id='smooth-wrapper'>
         <div id='smooth-content'>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/work' element={<Work />} />
-            <Route path="/work/:slug" element={<ProjectDetails />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/services' element={<Services />} />
-            <Route path='/contact' element={<Contact />} />
-          </Routes>
+          <ScrollToTop />
+          <Layout>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/work' element={<Work />} />
+              <Route path="/work/:slug" element={<ProjectDetails />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/services' element={<Services />} />
+              <Route path='/contact' element={<Contact />} />
+            </Routes>
+          </Layout>
         </div>
       </div>
     </>

@@ -1,7 +1,6 @@
 
 import ContactMain from '../components/ContactComp/ContactMain'
-import Fixed from '../components/HomeComp/Fixed'
-import Footer from '../components/HomeComp/Footer'
+import NewFooter from '../components/common/NewFooter'
 
 
 const Contact = () => {
@@ -9,7 +8,7 @@ const Contact = () => {
     <div className='bg-black overflow-x-hidden'>
       {/* <Fixed /> */}
       <ContactMain />
-      <Footer />
+      <NewFooter />
       
     </div>
   )

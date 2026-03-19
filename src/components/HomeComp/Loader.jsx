@@ -20,9 +20,9 @@ const Loader = () => {
         })
         tl.to(".loader", {
             //  opacity: 0,
-            duration: 0.7,
-            ease: "expo.inOut",
-            y: -700,
+            yPercent:-100,
+            duration: 1,
+            ease: "power4.out",
             display: "none",
 
         })

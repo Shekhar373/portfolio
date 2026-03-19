@@ -13,6 +13,7 @@ import KnowUs from '../components/HomeComp/KnowUs'
 import Footer from '../components/HomeComp/Footer'
 import NewFooter from '../components/common/NewFooter'
 import NewHero from '../components/HomeComp/NewHero'
+import ParallexImg from '../components/HomeComp/ParallexImg'
 
 
 const Home = () => {
@@ -25,7 +26,8 @@ const Home = () => {
         {/* <NewHero /> */}
         <Text1 />
         <BorderText />
-        <Hightlight />
+        {/* <Hightlight /> */}
+        <ParallexImg />
         <Comp />
         <Swiper />
         <Text2 />

@@ -6,15 +6,20 @@ span{
 
 
 @font-face{
-    font-family: 'text-font';
-    src: url('./assets/fonts/Azeret_Mono/AzeretMono-Regular.ttf'),
-         url('./assets/fonts/Azeret_Mono/AzeretMono-Regular.woff');
-    font-weight: 200;
+    font-family: text-font;
+    src: url('./assets/fonts/AzeretMono-VariableFont_wght.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: heading-font;
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+    font-weight: 500;
     font-style: normal;
 }
 
 body{
-    font-family: 'text-font', sans-serif;
+    font-family: text-font, sans-serif;
     font-weight: 200;
 }
 ::selection{

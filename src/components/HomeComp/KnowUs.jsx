@@ -47,7 +47,7 @@ const KnowUs = () => {
 
 
 
-    <div ref={horiscroll} className=' horizontal-text h-screen tracking-[2.5vw] font-bold bg-white pl-[250vw]  whitespace-nowrap  flex justify-center items-center text-black text-[14vw]'>
+    <div ref={horiscroll} className=' horizontal-text  font-[heading-font] h-screen tracking-[2.5vw] font-bold bg-white pl-[250vw]  whitespace-nowrap  flex justify-center items-center text-black text-[14vw]'>
       <h1>SO ARE YOU READY TO STAND OUT?</h1>
     </div>
 
