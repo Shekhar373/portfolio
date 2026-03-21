@@ -9,8 +9,6 @@ const Navbar = () => {
 
 
   gsap.registerPlugin(ScrollTrigger)
-  
-
   gsap.registerPlugin(SplitText)
 
   useGSAP(() => {
@@ -52,7 +50,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className='h-screen w-full flex relative flex-col bg-black justify-between'>
+    <div className='h-[90vh] lg:h-screen w-full flex relative flex-col bg-black justify-between'>
       <div>
         <div
           data-speed='0.6'
@@ -67,7 +65,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className='text-white hero-text text-xl w-full overflow-hidden flex justify-between p-5 md:p-10 absolute bottom-0 lg:p-10 max-sm:p-3 mt-12'>
+      <div className='text-white hero-text font-[heading-font] text-xl w-full overflow-hidden flex justify-between p-5 md:p-10 absolute bottom-0 lg:p-10 max-sm:p-3 mt-12'>
         <h1>Design</h1>
         <h1>Branding</h1>
         <h1>Motion</h1>

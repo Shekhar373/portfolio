@@ -20,11 +20,25 @@ const App = () => {
   gsap.registerPlugin(ScrollSmoother)
 
   useEffect(() => {
-    let smoother = ScrollSmoother.create({
-      smooth: 1.5,
-      effects: true,
-      normalizeScroll: true
-    });
+
+    const mm = gsap.matchMedia()
+
+    mm.add("(min-width: 769px)", () => {
+      let smoother = ScrollSmoother.create({
+        smooth: 1.5,
+        effects: true,
+        normalizeScroll: true
+      });
+    })
+
+    mm.add("(max-width: 768px)", () => {
+      let smoother = ScrollSmoother.create({
+        smooth: 1.1,
+        effects: true,
+        normalizeScroll: true
+      });
+    })
+
   })
 
   return (

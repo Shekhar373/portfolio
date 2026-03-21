@@ -8,7 +8,7 @@ import { useGSAP } from '@gsap/react'
 const NewProjectCard = () => {
     gsap.registerPlugin(ScrollTrigger)
 
-    useEffect(() => {
+    useGSAP(() => {
 
         gsap.utils.toArray(".workcard-main").forEach((section) => {
 
@@ -58,5 +58,6 @@ const NewProjectCard = () => {
         </div>
     )
 }
+
 
 export default NewProjectCard

@@ -21,6 +21,7 @@ span{
 body{
     font-family: text-font, sans-serif;
     font-weight: 200;
+    background-color: black;
 }
 ::selection{
     color: #FF3503;
@@ -58,7 +59,3 @@ body{
     transition: width .3s;
 
 }
-
-/* .panel:not(:first-child) {
-    clip-path: inset(100% 0% 0% 0%);
-  } */

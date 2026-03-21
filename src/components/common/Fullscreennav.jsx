@@ -73,14 +73,14 @@ const Fullscreennav = () => {
         style={{ visibility: "hidden", opacity: 0 }}
       >
 
-        <header className="fixed right-5 top-3">
+        <header className="fixed right-5 top-5">
           <Hamburger
             toggled={open}
             toggle={toggleMenu}
           />
         </header>
 
-        <div className="pt-10 text-2xl">
+        <div className="pt-8 text-2xl">
           <h1>NEWHUE STUDIO</h1>
         </div>
 

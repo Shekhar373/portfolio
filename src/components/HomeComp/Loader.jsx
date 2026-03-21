@@ -30,7 +30,7 @@ const Loader = () => {
 
     })
     return (
-        <div className=' fixed z-50 loader h-screen w-full bg-white text-black flex justify-center items-center gap-2 text-3xl font-medium'>
+        <div className=' fixed z-50 loader h-screen w-full bg-white text-black flex justify-center items-center gap-2 text-2xl md:text-3xl font-medium font-[heading-font]'>
             <h3>Tomorrow's</h3>
             <h3>Brand,</h3>
             <h3>Today</h3>

@@ -14,10 +14,10 @@ const ParallexImg = () => {
             // Parallax + scale
             gsap.fromTo(
                 img,
-                { scale: 1.06, yPercent: -100 },
+                { scale: 1.06, yPercent: -40 },
                 {
                     scale: 1,
-                    yPercent: 100,
+                    yPercent: 40,
                     ease: "none",
                     scrollTrigger: {
                         trigger: section,

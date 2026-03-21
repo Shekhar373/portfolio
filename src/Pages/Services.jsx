@@ -4,6 +4,7 @@ import gsap from 'gsap'
 import { SplitText } from 'gsap/all'
 import NewServiceCard from '../components/ServicesComp/NewServiceCard'
 import NewFooter from '../components/common/NewFooter'
+import Testimonials from '../components/ServicesComp/Testimonials'
 
 
 const Services = () => {
@@ -43,6 +44,7 @@ const Services = () => {
 
         </div>
         <NewServiceCard />
+        <Testimonials />
         <NewFooter />
        
       </div>
