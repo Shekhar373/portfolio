@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react"
 import gsap from "gsap"
 
-const NUM_PANELS = 10
+const NUM_PANELS = 20
 
 const NewPageTransition = ({ onMid, onComplete }) => {
     const panelsRef = useRef([])
@@ -14,7 +14,7 @@ const NewPageTransition = ({ onMid, onComplete }) => {
         // IN (cover screen)
         tl.to(panelsRef.current, {
           clipPath: "inset(0% 0% 0% 0%)",
-          stagger: 0.06,
+          stagger: 0.03,
           duration: 0.5,
           ease: "power3.inOut"
         })
@@ -27,10 +27,7 @@ const NewPageTransition = ({ onMid, onComplete }) => {
         // OUT (reveal new page)
         tl.to(panelsRef.current, {
           clipPath: "inset(0% 0% 0% 100%)",
-          stagger: {
-            amount:0.45,
-            from:"left"
-          },
+          stagger:0.03,
           duration: 0.45,
           ease: "power3.inOut"
         })
@@ -44,8 +41,9 @@ const NewPageTransition = ({ onMid, onComplete }) => {
                     ref={el => panelsRef.current[i] = el}
                     className="page-transition-panel h-full"
                     style={{
-                        flex: 1,
-                        background: "#fff",
+                        width: `calc(${100 / NUM_PANELS}% + 1px)`,
+                        marginLeft: "-1px",
+                        background: "#ECFAE5",
                         clipPath: "inset(0% 100% 0% 0%)"
                     }}
                 />

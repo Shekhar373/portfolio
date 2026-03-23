@@ -15,7 +15,7 @@ const Navbar = () => {
   
     const split = SplitText.create(".hero-text-main", {
       type: "chars",
-      mask: "chars"
+      // mask: "chars"
     });
     const splitt = SplitText.create(".hero-text-bottom", {
       type: "chars",
@@ -54,7 +54,7 @@ const Navbar = () => {
       <div>
         <div
           data-speed='0.6'
-          className=' text-white text-[21vw] tracking-tighter mt-[20vh] overflow-hidden text-center  leading-[15vw]'
+          className=' text-white text-[21vw] tracking-tighter mt-[20vh] text-center overflow-hidden  leading-[15vw]'
         >
           <h1 className='hero-text-main font-[heading-font] font-normal'>
             NEWHUE
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className='text-white hero-text font-[heading-font] text-xl w-full overflow-hidden flex justify-between p-5 md:p-10 absolute bottom-0 lg:p-10 max-sm:p-3 mt-12'>
+      <div className='text-white hero-text font-[heading-font] text-xl w-full  flex justify-between p-5 md:p-10 absolute bottom-0 lg:p-10 max-sm:p-3 mt-12'>
         <h1>Design</h1>
         <h1>Branding</h1>
         <h1>Motion</h1>
