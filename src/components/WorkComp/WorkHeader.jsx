@@ -17,7 +17,7 @@ const WorkHeader = () => {
         return gsap.from(split.lines, {
           rotation:3,
           opacity: 0,
-          delay: 0.2,
+          delay: 0.6,
           yPercent: 120,
           ease: "power",
           stagger: {

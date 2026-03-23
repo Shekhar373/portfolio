@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
 import PageTransition from "./PageTransition"
+import NewPageTransition from "./NewPageTransition"
 
 
 const Layout = ({ children }) => {
@@ -10,31 +11,24 @@ const Layout = ({ children }) => {
     const [transitionStage, setTransitionStage] = useState(false)
 
     useEffect(() => {
-
         if (location !== displayLocation) {
-
-            setTransitionStage(true)
-
-            setTimeout(() => {
-                setDisplayLocation(location)
-            }, 800)
-
-            setTimeout(() => {
-                setTransitionStage(false)
-            }, 1600)
-
+          setTransitionStage(true)
         }
-
-    }, [location])
+      }, [location])
 
     return (
-        <>
-            {transitionStage && <PageTransition />}
+         <>
+      {transitionStage && (
+        <NewPageTransition
+          onMid={() => setDisplayLocation(location)}   // switch page
+          onComplete={() => setTransitionStage(false)} // remove transition
+        />
+      )}
 
-            <div key={displayLocation.pathname}>
-                {children}
-            </div>
-        </>
+      <div key={displayLocation.pathname}>
+        {children}
+      </div>
+    </>
     )
 }
 
