@@ -26,7 +26,7 @@ const Home = () => {
         <Text1 />
         <BorderText />
         <ParallexImg />
-        <Comp />
+        {/* <Comp /> */}
         <Swiper />
         <Text2 />
         <Video />
