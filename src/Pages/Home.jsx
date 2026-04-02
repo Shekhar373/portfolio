@@ -5,7 +5,6 @@ import NewHero from '../components/HomeComp/NewHero'
 import Reel from '../components/HomeComp/Reel'
 import Text1 from '../components/HomeComp/Text1'
 import BorderText from '../components/HomeComp/BorderText'
-import Comp from '../components/HomeComp/Comp'
 import Swiper from '../components/HomeComp/Swiper'
 import Text2 from '../components/HomeComp/Text2'
 import Video from '../components/HomeComp/Video'
@@ -26,7 +25,6 @@ const Home = () => {
         <Text1 />
         <BorderText />
         <ParallexImg />
-        {/* <Comp /> */}
         <Swiper />
         <Text2 />
         <Video />
