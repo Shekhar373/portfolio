@@ -10,7 +10,6 @@ import { ScrollSmoother } from 'gsap/all'
 import gsap from 'gsap'
 import Fixed from './components/HomeComp/Fixed'
 import ProjectDetails from './components/WorkComp/ProjectDetails'
-import Layout from './components/common/Layout'
 import ScrollToTop from './components/common/ScrollToTop'
 import NewPageTransition from './components/common/NewPageTransition'
 
@@ -53,7 +52,6 @@ const App = () => {
         className='bg-[#EBEAE4]'
         >
           <ScrollToTop />
-          {/* <Layout> */}
           <NewPageTransition>
             <Routes>
               <Route path='/' element={<Home />} />
@@ -64,7 +62,6 @@ const App = () => {
               <Route path='/contact' element={<Contact />} />
             </Routes>
           </NewPageTransition>
-          {/* </Layout> */}
         </div>
       </div>
     </>
