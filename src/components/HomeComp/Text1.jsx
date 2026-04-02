@@ -33,7 +33,7 @@ const Text1 = () => {
 
   return (
 
-    <div ref={firsttext} className='text-2xl md:text-[2.5vw] h-[40vh] lg:h-[60vh] w-full bg-black text-white flex items-center p-5 lg:p-10'>
+    <div ref={firsttext} className='text-xl sm:text-2xl md:text-[2.5vw] h-[90vh] lg:h-[60vh] w-full bg-black text-white flex items-center p-5 lg:p-10'>
       <h1> New Hue Studio is a full-service creative agency offering graphic design, video editing, motion graphics, social media marketing, performance advertising, and 3D websites. We mix creativity to build brands that stand out</h1>
     </div>
 

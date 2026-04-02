@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <div className="min-h-[60vh] md:h-[90vh] w-full relative flex justify-center items-center mt-[10vh] md:mt-[20vh]">
             <footer
-                className="min-h-[48vh] md:h-[80vh] w-[98%] sm:w-[95%] rounded-xl bg-zinc-950 text-zinc-400 text-2xl sm:text-4xl md:text-5xl sticky bottom-0 flex flex-col justify-between py-6 md:py-0"
+                className="min-h-[48vh] md:h-[80vh] w-[98%] sm:w-[95%] rounded-xl bg-[#090909] text-zinc-400 text-2xl sm:text-4xl md:text-5xl sticky bottom-0 flex flex-col justify-between py-6 md:py-0"
             >
                 {/* Main Content Section */}
                 <div className="flex flex-col md:flex-row h-full md:h-[60%] w-full">

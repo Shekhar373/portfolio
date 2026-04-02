@@ -5,14 +5,11 @@ import { ScrollTrigger, SplitText } from 'gsap/all'
 
 const Navbar = () => {
 
-
-
-
   gsap.registerPlugin(ScrollTrigger)
   gsap.registerPlugin(SplitText)
 
   useGSAP(() => {
-  
+
     const split = SplitText.create(".hero-text-main", {
       type: "chars",
       // mask: "chars"
@@ -21,16 +18,16 @@ const Navbar = () => {
       type: "chars",
       mask: "chars"
     });
-  
+
     const tl = gsap.timeline();
-  
+
     tl.from(split.chars, {
       y: 350,
       delay: 2.6,
       stagger: 0.04,
       ease: "expo.out",
       duration: 2
-    },"same");
+    }, "same");
 
     tl.from(splitt.chars, {
       y: 350,
@@ -38,15 +35,15 @@ const Navbar = () => {
       stagger: 0.04,
       ease: "expo.out",
       duration: 2
-    },"same");
-  
+    }, "same");
+
     tl.from(".hero-text", {
       y: 250,
       stagger: 0.2,
-      delay:2.5,
+      delay: 2.5,
       ease: "expo.out",
       duration: 1
-    },"same");
+    }, "same");
   });
 
   return (

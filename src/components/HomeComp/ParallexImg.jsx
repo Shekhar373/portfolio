@@ -30,29 +30,32 @@ const ParallexImg = () => {
 
         });
 
-        gsap.to(".para-main", {
-            backgroundColor: "white",
-            scrollTrigger: {
-                trigger: ".para-main", // typo fix: was "trigegr"
-                // markers: true,
-                start: "top -170%",      // "top 0%" is not a valid value, use "top top" (when .para-main's top hits viewport top)
-                end: "top -200%",       // This is a rare value; if you want to animate as user scrolls past, you can use e.g. "bottom top" or adjust accordingly
-                scrub: true
-            }
-        })
+        // Only enable this animation on screens >= 1024px using gsap.matchMedia
+        gsap.matchMedia().add("(min-width: 1024px)", () => {
+            gsap.to(".para-main", {
+                backgroundColor: "#EBEAE4",
+                scrollTrigger: {
+                    trigger: ".para-main",
+                    // markers: true,
+                    start: "top -170%",
+                    end: "top -200%",
+                    scrub: true
+                }
+            });
+        });
     })
     return (
-        <div className='para-main h-[170vh] md:h-[250vh] lg:h-[300vh] pt-[20vh] lg:pt-0 w-full bg-black p-5 lg:p-10'>
-            <section className='ParaImg-Container relative h-[60vh] lg:h-[90vh] w-full  overflow-hidden'>
+        <div className='para-main h-[170vh] lg:h-[300vh] pt-[20vh] lg:pt-0 w-full bg-black p-5 lg:p-10'>
+            <section className='ParaImg-Container relative h-[40vh] lg:h-[90vh] w-full  overflow-hidden'>
                 <img className='ParallexImg absolute h-full w-full object-cover '
                     src="/images/8.jpg" alt="" />
             </section>
-            <div className='flex gap-5 lg:gap-10 mt-10 lg:mt-10'>
-                <section className='ParaImg-Container relative h-[60vh] lg:h-[90vh] w-[50vw] overflow-hidden'>
+            <div className='flex lg:flex-row flex-col gap-5 lg:gap-10 mt-10 lg:mt-10'>
+                <section className='ParaImg-Container relative h-[40vh] lg:h-[90vh] lg:w-[50vw] w-full overflow-hidden'>
                     <img className='ParallexImg absolute h-full w-full object-cover '
                         src="/images/1.jpg" alt="" />
                 </section>
-                <section className='ParaImg-Container overflow-hidden relative h-[60vh] lg:h-[90vh] w-[50vw]'>
+                <section className='ParaImg-Container overflow-hidden relative h-[40vh] lg:h-[90vh] lg:w-[50vw] w-full'>
                     <img className='ParallexImg absolute h-full w-full object-cover '
                         src="/images/6.jpg" alt="" />
                 </section>

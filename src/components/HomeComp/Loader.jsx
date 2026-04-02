@@ -30,10 +30,10 @@ const Loader = () => {
 
     })
     return (
-        <div className=' fixed z-50 loader h-screen w-full bg-white text-black flex justify-center items-center gap-2 text-2xl md:text-3xl font-medium font-[heading-font]'>
-            <h3>Tomorrow's</h3>
-            <h3>Brand,</h3>
-            <h3>Today</h3>
+        <div className=' fixed z-50 loader h-screen w-full bg-[#090909] text-[#EBEAE4] flex justify-center items-center gap-2 text-2xl md:text-3xl font-medium font-[heading-font]'>
+            <h3>Think</h3>
+            <h3>Beyond</h3>
+            <h3>Odinary</h3>
         </div>
     )
 }

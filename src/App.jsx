@@ -12,6 +12,7 @@ import Fixed from './components/HomeComp/Fixed'
 import ProjectDetails from './components/WorkComp/ProjectDetails'
 import Layout from './components/common/Layout'
 import ScrollToTop from './components/common/ScrollToTop'
+import NewPageTransition from './components/common/NewPageTransition'
 
 
 
@@ -48,9 +49,12 @@ const App = () => {
         <Fixed />
       </nav>
       <div id='smooth-wrapper'>
-        <div id='smooth-content'>
+        <div id='smooth-content'
+        className='bg-[#EBEAE4]'
+        >
           <ScrollToTop />
-          <Layout>
+          {/* <Layout> */}
+          <NewPageTransition>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/work' element={<Work />} />
@@ -59,7 +63,8 @@ const App = () => {
               <Route path='/services' element={<Services />} />
               <Route path='/contact' element={<Contact />} />
             </Routes>
-          </Layout>
+          </NewPageTransition>
+          {/* </Layout> */}
         </div>
       </div>
     </>

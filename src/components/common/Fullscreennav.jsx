@@ -59,7 +59,7 @@ const Fullscreennav = () => {
 
   return (
 
-    <div ref={container} className="md:hidden">
+    <div ref={container} className="lg:hidden">
 
       <Hamburger
         toggled={open}

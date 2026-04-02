@@ -21,7 +21,7 @@ const Video = () => {
     })
   })
   return (
-    <div className=' lg:h-[110vh] max-sm:h-[40vh] w-full bg-white flex justify-center items-center'>
+    <div className=' lg:h-[110vh] max-sm:h-[40vh] w-full  flex justify-center items-center'>
       <video ref={scale} autoPlay loop muted
         className='lg:h-[80vh] max-sm:h-[40vh] w-[80vw]'
         src="https://rejouice-2024.cdn.prismic.io/rejouice-2024/Z2BbT5bqstJ98kk6_REJOUICE-PORTFOLIO-LOOP-PROJECTS.mp4"></video>

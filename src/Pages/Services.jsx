@@ -18,9 +18,8 @@ const Services = () => {
       autoSplit: true,
       onSplit: ((split) => {
         return gsap.from(split.lines, {
-          rotation:3,
           opacity: 0,
-          delay: 0.6,
+          delay: 1.5,
           yPercent: 120,
           ease: "power",
           stagger: {
@@ -33,8 +32,8 @@ const Services = () => {
   })
   return (
    
-      <div className='overflow-x-hidden bg-black'>
-        <div className='service-header h-[80vh] bg-black tracking-tighter text-white w-full text-[4vw] lg:text-[2.5vw] flex items-end p-5 lg:p-10 pb-[10vh] leading-[3.5vw]'>
+      <div className='overflow-x-hidden bg-[#EBEAE4] text-[#090909]'>
+        <div className='service-header h-[80vh] font-bold tracking-tighter w-full text-[4vw] lg:text-[2.5vw] flex items-end p-5 lg:p-10 pb-[10vh] leading-[3.5vw]'>
           <h1> <span className='pl-[10vw]'>Explore</span> New Hue Studio's full range of creative services: graphic design, video editing, motion graphics, social media content, performance marketing on TikTok & Meta, content shoots, and 3D website design.</h1>
 
         </div>

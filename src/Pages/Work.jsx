@@ -7,7 +7,7 @@ import WorkHeader from '../components/WorkComp/WorkHeader'
 const Work = () => {
  
   return (
-    <div className='bg-black text-white'>
+    <div className='bg-[#EBEAE4] text-[#090909]'>
       <WorkHeader />
       <NewProjectCard />
       <NewFooter />

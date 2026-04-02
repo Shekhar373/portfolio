@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
+
 span{
     display: inline-block;
 }
-
 
 @font-face{
     font-family: text-font;
@@ -11,9 +11,16 @@ span{
     font-weight: 300;
     font-style: normal;
 }
+
 @font-face{
     font-family: heading-font;
     src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: tall-font;
+    src: url('./assets/fonts/Edition-BF69b289c277a15.otf');
     font-weight: 500;
     font-style: normal;
 }
