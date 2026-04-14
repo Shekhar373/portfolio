@@ -5,8 +5,7 @@ import { ScrollTrigger, SplitText } from 'gsap/all'
 
 const Navbar = () => {
 
-  gsap.registerPlugin(ScrollTrigger)
-  gsap.registerPlugin(SplitText)
+  gsap.registerPlugin(ScrollTrigger, SplitText)
 
   useGSAP(() => {
 
@@ -45,6 +44,8 @@ const Navbar = () => {
       duration: 1
     }, "same");
   });
+
+ 
 
   return (
     <div className='h-[90vh] lg:h-screen w-full flex relative flex-col bg-black justify-between'>

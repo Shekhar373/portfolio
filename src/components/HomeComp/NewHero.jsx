@@ -46,10 +46,11 @@ const NewHero = () => {
             }
         })
         introTl.to(".hero-text-container", {
-            yPercent: -50,
+            yPercent: window.innerWidth >= 1900 ? -40 : -50,
             duration: 1,
             ease: "expo.inOut"
         })
+   
 
         introTl.from(herovideoRef.current, {
             clipPath: "inset(0 0 100% 0)",
@@ -97,7 +98,7 @@ const NewHero = () => {
 
 
     return (
-        <div className='lg:h-[270vh] h-[170vh]  w-full bg-[#EBEAE4]'>
+        <div id='hero' className='lg:h-[270vh] h-[170vh]  w-full bg-[#EBEAE4]'>
             <div
                 className='hero-parent h-[80vh] w-full relative font-[tall-font] '
                 ref={heroParentRef}

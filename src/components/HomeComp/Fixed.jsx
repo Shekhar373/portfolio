@@ -3,14 +3,24 @@ import gsap from 'gsap'
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Fullscreennav from '../common/Fullscreennav'
+import { ScrollToPlugin } from 'gsap/all'
 
 
 const Fixed = () => {
+
+  gsap.registerPlugin(ScrollToPlugin)
+
+  const home = ()=>{
+    gsap.to(window,{
+      duration:1,
+      scrollTo:'#hero'
+    })
+  }
     
   return (
     <div>
       <div className='nav relative w-full font-[text-font] text-sm flex p-5 lg:py-5 lg:px-10 text-white'>
-          <div className='cursor-pointer fixed mix-blend-difference z-40 pt-3 md:pt-0 '>
+          <div onClick={home} className='cursor-pointer fixed mix-blend-difference z-40 pt-3 md:pt-0 '>
             <Link className=' transition-all' to="/">NEW HUE STUDIO</Link>
 
           </div>
