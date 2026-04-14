@@ -22,7 +22,6 @@ const Home = () => {
         <NewHero />
         {/* <Reel /> */}
         <Text1 />
-        <Text1 />
         <BorderText />
         <ParallexImg />
         <Swiper />

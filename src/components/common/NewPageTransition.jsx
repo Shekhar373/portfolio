@@ -33,7 +33,7 @@ const NewPageTransition = (props) => {
   }, [currentPath])
 
   return (
-    <div>
+    <div >
       <div className="fixed top-0 left-0 z-50 pointer-events-none w-full h-screen flex">
         {[...Array(NUM_PANELS)].map((_, i) => (
           <div

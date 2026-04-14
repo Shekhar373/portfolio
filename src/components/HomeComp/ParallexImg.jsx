@@ -14,10 +14,10 @@ const ParallexImg = () => {
             // Parallax + scale
             gsap.fromTo(
                 img,
-                { scale: 1.06, yPercent: -40 },
+                { scale: 1.06, yPercent: -20 },
                 {
                     scale: 1,
-                    yPercent: 40,
+                    yPercent: 20,
                     ease: "none",
                     scrollTrigger: {
                         trigger: section,
@@ -50,14 +50,14 @@ const ParallexImg = () => {
                 <img className='ParallexImg absolute h-full w-full object-cover '
                     src="/images/8.jpg" alt="" />
             </section>
-            <div className='flex lg:flex-row flex-col gap-5 lg:gap-10 mt-10 lg:mt-10'>
+            <div className='flex lg:flex-row flex-col gap-5 lg:gap-10 mt-10'>
                 <section className='ParaImg-Container relative h-[40vh] lg:h-[90vh] lg:w-[50vw] w-full overflow-hidden'>
                     <img className='ParallexImg absolute h-full w-full object-cover '
-                        src="/images/1.jpg" alt="" />
+                        src="/images/homeimage.jpg" alt="" />
                 </section>
                 <section className='ParaImg-Container overflow-hidden relative h-[40vh] lg:h-[90vh] lg:w-[50vw] w-full'>
                     <img className='ParallexImg absolute h-full w-full object-cover '
-                        src="/images/6.jpg" alt="" />
+                        src="/images/home-image-2.jpg" alt="" />
                 </section>
             </div>
         </div>

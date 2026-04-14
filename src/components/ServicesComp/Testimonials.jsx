@@ -30,8 +30,8 @@ const Testimonials = () => {
     ]
 
   return (
-    <div className=' mt-10 lg:mt-[40vh] font-[heading-font]'>
-        <div className='text-7xl font-[heading-font] p-5 lg:p-10 text-center'>
+    <div className=' mt-10 lg:mt-[40vh] font-[text-font]'>
+        <div className='text-7xl font-[text-font] p-5 lg:p-10 text-center'>
             <h1>Our Clients Says It Best</h1>
         </div>
         <div className="flex flex-col lg:flex-row px-5 lg:gap-5 justify-center items-center mt-[10vh] w-full">

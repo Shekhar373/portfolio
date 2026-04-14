@@ -2,7 +2,7 @@ export const projects = [
     {
       title: "La Vella",
       slug: "la-vella",
-      cover: "https://images.prismic.io/rejouice-2024/abAKaVxvIZEnjhr7_Hero-CGI.jpg?auto=format,compress&w=2560&h=1440&fm=avif",
+      cover: "/projects/club/La-Vella-Cover.jpg",
       image: "/images/nike.jpg",
       description: "Creative GSAP landing page",
     },

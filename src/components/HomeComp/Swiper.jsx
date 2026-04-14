@@ -27,25 +27,25 @@ const Swiper = () => {
         <div className='relative '>
           <img
           className='h-[70vh] w-[100vw] object-cover'
-           src="https://www.dzinr.in/new-col/2.png" alt="" />
+           src="/images/pin-image.jpg" alt="" />
 
-           <div className=' absolute h-[30vh] w-[100vw] bg-blue-950'>
+           <div className=' absolute h-[30vh] w-[100vw] bg-[#415030]'>
 
            </div>
 
         </div>
         <div>
           <img className='h-[70vh] w-[80vw] object-cover'
-           src="https://www.dzinr.in/new-col/carsdaily-v2.png" alt="" />
-            <div className=' absolute h-[30vh] w-[80vw] bg-pink-950'>
+           src="/images/pin-image2.jpg" alt="" />
+            <div className=' absolute h-[30vh] w-[80vw] bg-[#2e3d50]'>
 
            </div>
         </div>
         <div>
 
           <img className='h-[70vh] w-[80vw] object-cover'
-           src="https://www.dzinr.in/new-col/4.png" alt="" />
-            <div className=' absolute h-[30vh] w-[80vw] bg-red-950'>
+           src="/images/pin-image3.jpg" alt="" />
+            <div className=' absolute h-[30vh] w-[80vw] bg-amber-50'>
 
            </div>
         </div>

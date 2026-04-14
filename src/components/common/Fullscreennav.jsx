@@ -84,7 +84,7 @@ const Fullscreennav = () => {
           <h1>NEWHUE STUDIO</h1>
         </div>
 
-        <div className="fullscreen-nav-link text-7xl leading-18">
+        <div className="fullscreen-nav-link text-5xl leading-[13vw]">
           <Link className="inline-block" to="/" onClick={handleLinkClick}>Home</Link><br />
           <Link className="inline-block" to="/work" onClick={handleLinkClick}>Work</Link><br />
           <Link className="inline-block" to="/about" onClick={handleLinkClick}>About</Link><br />

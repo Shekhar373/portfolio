@@ -20,26 +20,28 @@ const App = () => {
   gsap.registerPlugin(ScrollSmoother)
 
   useEffect(() => {
+    const mm = gsap.matchMedia();
 
-    const mm = gsap.matchMedia()
-
-    mm.add("(min-width: 769px)", () => {
+    // Only enable ScrollSmoother for screens wider than 1024px
+    mm.add("(min-width: 1024px)", () => {
       let smoother = ScrollSmoother.create({
         smooth: 1.5,
         effects: true,
         normalizeScroll: true
       });
-    })
+    });
 
-    mm.add("(max-width: 768px)", () => {
-      let smoother = ScrollSmoother.create({
-        smooth: 1.1,
-        effects: true,
-        normalizeScroll: true
-      });
-    })
+    // Optional: Remove or do nothing below 1024px
+    // If you want to completely disable smoother below 1024px, you can register a cleanup:
+    mm.add("(max-width: 1023px)", () => {
+      if (ScrollSmoother.get()) {
+        ScrollSmoother.get().kill();
+      }
+    });
 
-  })
+    // Cleanup media query on unmount
+    return () => mm.revert();
+  }, []);
 
   return (
     <>

@@ -9,7 +9,7 @@ const Fixed = () => {
     
   return (
     <div>
-      <div className='nav relative w-full font-[heading-font] text-sm flex p-5 lg:py-5 lg:px-10 text-white'>
+      <div className='nav relative w-full font-[text-font] text-sm flex p-5 lg:py-5 lg:px-10 text-white'>
           <div className='cursor-pointer fixed mix-blend-difference z-40 pt-3 md:pt-0 '>
             <Link className=' transition-all' to="/">NEW HUE STUDIO</Link>
 
