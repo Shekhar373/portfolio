@@ -10,13 +10,6 @@ span{
     display: inline-block;
 }
 
-/* @font-face{
-    font-family: text-font;
-    src: url('./assets/fonts/AzeretMono-VariableFont_wght.ttf');
-    font-weight: 300;
-    font-style: normal;
-} */
-
 @font-face{
     font-family: text-font;
     src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');

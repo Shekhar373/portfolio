@@ -50,7 +50,7 @@ const ParallexImg = () => {
                 <img className='ParallexImg absolute h-full w-full object-cover '
                     src="/images/8.jpg" alt="" />
             </section>
-            <div className='flex lg:flex-row flex-col gap-5 lg:gap-10 mt-10'>
+            <div className='flex lg:flex-row flex-col gap-5 mt-5'>
                 <section className='ParaImg-Container relative h-[40vh] lg:h-[90vh] lg:w-[50vw] w-full overflow-hidden'>
                     <img className='ParallexImg absolute h-full w-full object-cover '
                         src="/images/homeimage.jpg" alt="" />

@@ -1,45 +1,52 @@
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import { ScrollTrigger, SplitText } from 'gsap/all'
-import React, { useRef } from 'react'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger, SplitText } from "gsap/all";
+import React, { useRef } from "react";
 
 const Text1 = () => {
-  gsap.registerPlugin(ScrollTrigger, SplitText)
+  gsap.registerPlugin(ScrollTrigger, SplitText);
 
-  const firsttext = useRef(null)
+  const firsttext = useRef(null);
 
   useGSAP(() => {
-    var split = SplitText.create(".first-text h1", {
-      type: "chars, words",
-      mask: "chars",
-      autoSplit:true
-    })
+    let split = SplitText.create(".first-text h1", {
+      type: "lines",
+      mask: "lines",
+      autoSplit: true,
+    });
 
-    gsap.from(split.chars, {
+    gsap.from(split.lines, {
       opacity: 0,
       yPercent: 120,
       ease: "power",
       stagger: {
-        amount: 0.1
+        amount: 0.1,
       },
+      duration:0.8,
 
       scrollTrigger: {
         trigger: firsttext.current,
-        // markers:true,
+        // markers: true,
         start: "top 50%",
-       toggleActions: "play none none reverse"
-      }
-    })
-  })
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
 
   return (
-
-    <div ref={firsttext} className='first-text text-2xl md:text-[2.5vw] h-[60vh] w-full bg-black text-white flex items-center p-5 lg:p-10'>
-      <h1> New Hue Studio is a full-service creative agency offering graphic design, video editing, motion graphics, social media marketing, performance advertising, and 3D websites. We mix creativity to build brands that stand out</h1>
+    <div
+      ref={firsttext}
+      className="first-text text-2xl md:text-[2.5vw] h-[60vh] w-full bg-black text-white flex items-center p-5 lg:p-10"
+    >
+      <h1>
+        {" "}
+        New Hue Studio is a full-service creative agency offering graphic
+        design, video editing, motion graphics, social media marketing,
+        performance advertising, and 3D websites. We mix creativity to build
+        brands that stand out
+      </h1>
     </div>
+  );
+};
 
-
-  )
-}
-
-export default Text1
+export default Text1;

@@ -121,7 +121,7 @@ const NewHero = () => {
                     ref={herovideoRef}
                     autoPlay loop muted
                     className=' object-cover h-[100vh] w-full '
-                    src="/images/Logo.mp4">
+                    src="/video/hero_video.mp4">
                 </video>
                 {/* <h1 className='absolute text-white text-[6vw] border-b-4'>SHOW REEL</h1> */}
             </div>

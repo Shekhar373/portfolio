@@ -11,6 +11,7 @@ import Video from '../components/HomeComp/Video'
 import KnowUs from '../components/HomeComp/KnowUs'
 import NewFooter from '../components/common/NewFooter'
 import ParallexImg from '../components/HomeComp/ParallexImg'
+import HomeServices from '../components/HomeComp/HomeServices'
 
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
         <Text1 />
         <BorderText />
         <ParallexImg />
+        {/* <HomeServices /> */}
         <Swiper />
         <Text2 />
         <Video />
