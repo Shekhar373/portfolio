@@ -14,15 +14,13 @@ const NewPageTransition = (props) => {
 
     tl.to(panelsRef.current, {
       clipPath: "inset(0% 0% 0% 0%)",
-      stagger: 0.03,
-      duration: 0.3,
+      stagger: {amount:0.4},
       ease: "power3.inOut"
     })
 
     tl.to(panelsRef.current, {
       clipPath: "inset(0% 0% 0% 100%)",
-      stagger: 0.03,
-      duration: 0.3,
+      stagger: {amount:0.4},
       ease: "power3.inOut"
     })
 

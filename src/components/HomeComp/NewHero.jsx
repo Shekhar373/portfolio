@@ -32,8 +32,8 @@ const NewHero = () => {
         introTl.to(split.chars, {
             clipPath: "inset(0% 0% 0% 100%)",
             stagger: {
-                amount: 0.2
-            }
+                amount: 0.1
+            },
         })
         introTl.to(split.chars, {
             clipPath: "inset(0% 100% 0% 0%)",
@@ -42,7 +42,7 @@ const NewHero = () => {
         introTl.to(split.chars, {
             clipPath: "inset(0% 0% 0% 0%)",
             stagger: {
-                amount: 0.2
+                amount: 0.1
             }
         })
         introTl.to(".hero-text-container", {

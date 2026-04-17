@@ -1,52 +1,33 @@
-import React from 'react'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import { SplitText } from 'gsap/all'
-import NewServiceCard from '../components/ServicesComp/NewServiceCard'
-import NewFooter from '../components/common/NewFooter'
-import Testimonials from '../components/ServicesComp/Testimonials'
-
+import React from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
+import NewServiceCard from "../components/ServicesComp/NewServiceCard";
+import NewFooter from "../components/common/NewFooter";
+import Testimonials from "../components/ServicesComp/Testimonials";
+import ServiceCard from "../components/ServicesComp/ServiceCard";
 
 const Services = () => {
+  gsap.registerPlugin(SplitText);
 
-  gsap.registerPlugin(SplitText)
-
-  useGSAP(() => {
-    const split = SplitText.create(".service-header h1", {
-      type: "lines",
-      mask: "lines",
-      autoSplit: true,
-      onSplit: ((split) => {
-        return gsap.from(split.lines, {
-          opacity: 0,
-          delay: 1.5,
-          yPercent: 120,
-          ease: "power",
-          stagger: {
-            amount: 0.1
-          },
-        })
-      }),
-      onComplete: () => split.revert()
-    })
-  })
   return (
-   
-      <div className='overflow-x-hidden bg-[#EBEAE4] text-[#090909]'>
-        <div className='service-header h-[80vh] tracking-tighter w-full text-[4vw] lg:text-[2.5vw] flex items-end p-5 lg:p-10 pb-[10vh] leading-[3.5vw]'>
-          <h1> <span className='pl-[10vw]'>Explore</span> New Hue Studio's full range of creative services: graphic design, video editing, motion graphics, social media content, performance marketing on TikTok & Meta, content shoots, and 3D website design.</h1>
-
+    <div className="overflow-x-hidden bg-[#EBEAE4] text-[#090909]">
+      <div className="h-[200vh] w-full bg-black">
+        <div className="h-[60vh] w-full flex items-end p-5 lg:p-10">
+           <h1 className="text-[10vw] leading-[6vw] text-white">Services</h1>
         </div>
-        <NewServiceCard />
-        <Testimonials />
-        <NewFooter />
-       
+        <div className="h-screen w-full px-5 lg:px-10">
+          <video 
+          className="h-full w-full object-cover"
+          loop muted autoPlay
+           src="/video/hero_video.mp4"></video>
+        </div>
       </div>
-     
-  
+      <ServiceCard />
+      <Testimonials />
+      <NewFooter />
+    </div>
+  );
+};
 
-
-  )
-}
-
-export default Services
+export default Services;
