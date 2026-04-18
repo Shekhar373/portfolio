@@ -104,8 +104,8 @@ const HomeServices = () => {
                 src={card.image ?? "null"}
                 alt={card.heading}
               />
-              <h1 className="text-3xl sm:text-2xl md:text-5xl lg:text-2xl font-semibold mb-2">{card.heading}</h1>
-              <h3 className="text-xl sm:text-xl md:text-xl lg:text-sm text-zinc-500">{card.text}</h3>
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-semibold mb-2">{card.heading}</h1>
+              <h3 className="text-xs sm:text-sm md:text-md lg:text-sm text-zinc-500">{card.text}</h3>
             </div>
           );
         })}
