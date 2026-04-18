@@ -42,8 +42,8 @@ const Marque = () => {
 })
     })
     return (
-        <div className='lg:h-[40vh] max-sm:h-[30vh] text-white flex items-center'>
-            <div  className=' move lg:h-[25vh] max-sm:h-[8vh] md:h-[15vh] items-center  font-medium bg-[#D9FF06] flex lg:gap-46 md:gap-28'>
+        <div className='lg:h-[40vh] h-[30vh] text-white flex items-center overflow-hidden'>
+            <div  className=' move lg:h-[25vh] h-[8vh] md:h-[15vh] items-center  font-medium bg-[#D9FF06] flex lg:gap-46 md:gap-28'>
                 <div className='marque'> <MarqueComp /></div>
                 <div className='marque'> <MarqueComp /></div>
                 <div className='marque'> <MarqueComp /></div>

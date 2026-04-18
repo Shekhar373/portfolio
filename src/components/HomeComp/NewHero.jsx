@@ -101,25 +101,36 @@ const NewHero = () => {
   });
 
   return (
-    <div id="hero" className="lg:h-[270vh] h-[170vh]  w-full bg-[#EBEAE4]">
+    <div id="hero" className="lg:h-[270vh] h-[120vh]  w-full bg-[#EBEAE4]">
       <div
         className="hero-parent h-[80vh] w-full relative font-[tall-font] "
         ref={heroParentRef}
       >
         <div className="h-screen absolute flex justify-center pt-[40vh] lg:items-center uppercase lg:pt-[5vh] w-full text-center">
           <div className="hero-text-container">
-            <h1 className="hero-text text-[22vw] leading-[25vw] w-full">
-              New Hue Studio
-            </h1>
+            <div className="hero-text text-[30vw] max-md:tracking-wide lg:text-[22vw] flex flex-col lg:gap-15 lg:flex-row leading-[27vw] lg:leading-[25vw] w-full">
+              <h1>NEW HUE</h1>
+              <h1>STUDIO</h1>
+            </div>
           </div>
         </div>
         <div className="h-[40vh] w-full"></div>
-        <div className="sub-heading h-[40vh] w-full flex pt-[20vh] gap-2 text-[4vw] justify-center items-center">
+        <div className="visible lg:hidden p-5">
+        <video
+          ref={herovideoRef}
+          autoPlay
+          loop
+          muted
+          className=" object-cover h-[40vh] w-full "
+          src="/video/hero_video.mp4"
+        ></video>
+        </div>
+        <div className="sub-heading h-[20vh] lg:h-[40vh]  w-full flex lg:pt-[20vh] gap-2 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
           <h1 className="visual-text">A VISUAL</h1>
           <h1 className="design-text">DESIGN </h1>
         </div>
       </div>
-      <div className="hero-video h-[100vh] w-full relative flex justify-center items-center">
+      <div className="hero-video h-[100vh] w-full relative hidden lg:flex justify-center items-center">
         <video
           ref={herovideoRef}
           autoPlay

@@ -49,7 +49,7 @@ const HomeServices = () => {
       tl.from(".home-service-card", {
         yPercent: 150,
         ease: "elastic.out(1,0.3)",
-        stagger: {amount:0.1},
+        stagger: { amount: 0.1 },
       });
 
       // tl.to(".home-service-card", {
@@ -78,16 +78,25 @@ const HomeServices = () => {
         <div className="hidden lg:flex gap-10 pt-5">
           <h1 className="">Summary:</h1>
           <div className="leading-[2vw] text-zinc-600 pt-10">
-            <h1 className="hover:text-white transition-all cursor-pointer">Branding</h1>
-            <h1 className="hover:text-white transition-all cursor-pointer">UI/UX Design</h1>
-            <h1 className="hover:text-white transition-all cursor-pointer">Development</h1>
-            <h1 className="hover:text-white transition-all cursor-pointer">Packaging</h1>
+            <h1 className="hover:text-white transition-all cursor-pointer">
+              Branding
+            </h1>
+            <h1 className="hover:text-white transition-all cursor-pointer">
+              UI/UX Design
+            </h1>
+            <h1 className="hover:text-white transition-all cursor-pointer">
+              Development
+            </h1>
+            <h1 className="hover:text-white transition-all cursor-pointer">
+              Packaging
+            </h1>
           </div>
         </div>
-   
       </div>
-      <div className="home-service-parent w-full flex flex-col lg:flex-row text-white justify-center bg-black items-center p-4 md:p-8 lg:p-10 gap-5
-        min-h-[120vh] sm:min-h-[150vh] md:min-h-[180vh] lg:min-h-0 lg:h-screen">
+      <div
+        className="home-service-parent w-full flex flex-col lg:flex-row text-white justify-center bg-black items-center p-4 md:p-8 lg:p-10 gap-5
+        min-h-[120vh] sm:min-h-[150vh] md:min-h-[180vh] lg:min-h-0 lg:h-screen"
+      >
         {service.map((card, idx) => {
           return (
             <div
@@ -104,13 +113,16 @@ const HomeServices = () => {
                 src={card.image ?? "null"}
                 alt={card.heading}
               />
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-semibold mb-2">{card.heading}</h1>
-              <h3 className="text-xs sm:text-sm md:text-md lg:text-sm text-zinc-500">{card.text}</h3>
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-semibold mb-2">
+                {card.heading}
+              </h1>
+              <h3 className="text-xs sm:text-sm md:text-md lg:text-sm text-zinc-500">
+                {card.text}
+              </h3>
             </div>
           );
         })}
       </div>
-
 
       <div className="h-[40vh] w-full bg-black"></div>
     </div>

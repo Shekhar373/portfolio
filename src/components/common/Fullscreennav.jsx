@@ -80,11 +80,11 @@ const Fullscreennav = () => {
           />
         </header>
 
-        <div className="pt-8 text-2xl">
+        <div className="pt-8 text-xl md:text-2xl">
           <h1>NEWHUE STUDIO</h1>
         </div>
 
-        <div className="fullscreen-nav-link text-5xl leading-[13vw]">
+        <div className="fullscreen-nav-link text-5xl sm:text-6xl md:text-8xl leading-[13vw] sm:leading-[11vw] md:leading-[9vw]">
           <Link className="inline-block" to="/" onClick={handleLinkClick}>Home</Link><br />
           <Link className="inline-block" to="/work" onClick={handleLinkClick}>Work</Link><br />
           <Link className="inline-block" to="/about" onClick={handleLinkClick}>About</Link><br />
