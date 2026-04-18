@@ -23,7 +23,7 @@ const Home = () => {
         <NewHero />
         {/* <Reel /> */}
         <Text1 />
-        <BorderText />
+        {/* <BorderText /> */}
         <ParallexImg />
         <HomeServices />
         <Swiper />

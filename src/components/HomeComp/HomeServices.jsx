@@ -86,25 +86,31 @@ const HomeServices = () => {
         </div>
    
       </div>
-      <div className="home-service-parent h-[220vh] w-full lg:h-screen flex flex-col lg:flex-row  text-white justify-center bg-black items-center p-10 gap-5">
+      <div className="home-service-parent w-full flex flex-col lg:flex-row text-white justify-center bg-black items-center p-4 md:p-8 lg:p-10 gap-5
+        min-h-[120vh] sm:min-h-[150vh] md:min-h-[180vh] lg:min-h-0 lg:h-screen">
         {service.map((card, idx) => {
           return (
             <div
               key={idx}
               ref={cardRef}
-              className="home-service-card h-[50vh] w-[100vw] lg:h-[60vh] lg:w-[25vw] flex flex-col justify-between p-5 rounded-3xl bg-[#101010] border-1 border-zinc-700"
+              className="home-service-card flex flex-col justify-between
+                w-full sm:w-[80vw] md:w-[60vw] lg:w-[25vw]
+                h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[60vh]
+                p-4 md:p-6 lg:p-5 rounded-3xl bg-[#101010] border border-zinc-700 transition-shadow
+                shadow-lg hover:shadow-xl"
             >
               <img
-                className="h-[20vh] w-[10vw] bg-zinc-900"
-                src="null"
-                alt=""
+                className="w-[40vw] h-[15vh] sm:w-[25vw] sm:h-[18vh] md:w-[18vw] md:h-[20vh] lg:w-[10vw] lg:h-[20vh] object-contain bg-zinc-900 rounded-xl mb-3"
+                src={card.image ?? "null"}
+                alt={card.heading}
               />
-              <h1 className="text-3xl lg:text-2xl">{card.heading}</h1>
-              <h3 className="text-md lg:text-sm text-zinc-500">{card.text}</h3>
+              <h1 className="text-3xl sm:text-2xl md:text-5xl lg:text-2xl font-semibold mb-2">{card.heading}</h1>
+              <h3 className="text-xl sm:text-xl md:text-xl lg:text-sm text-zinc-500">{card.text}</h3>
             </div>
           );
         })}
       </div>
+
 
       <div className="h-[40vh] w-full bg-black"></div>
     </div>
