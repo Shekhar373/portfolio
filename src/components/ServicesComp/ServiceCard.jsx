@@ -56,35 +56,49 @@ const ServiceCard = () => {
         return (
           <div
             key={idx}
-            className="service-card h-screen w-full flex gap-10 bg-black text-white p-5 lg:p-10 lg:pt-20 overflow-hidden"
+            className="service-card min-h-screen h-auto w-full flex flex-col lg:flex-row gap-6 lg:gap-10 bg-black text-white p-5 lg:p-10 pt-30 lg:pt-20 overflow-hidden"
           >
-            <div className="h-full w-auto">
-              <h1 className="text-5xl">{card.number}</h1>
+            {/* Left block: Service number */}
+            <div className="flex justify-start lg:justify-center items-start lg:items-start w-full lg:w-auto mb-4 lg:mb-0">
+              <h1 className="text-4xl lg:text-5xl">{card.number}</h1>
             </div>
-            <div className="">
-              <h1>LOGO DESIGN</h1>
-              <h1>BRAND IDENTITY</h1>
-              <h1>DEVELOPMENT</h1>
-              <h1>PACKAGING DESIGN</h1>
-              <h1>WEBSITE DESIGN & DEV</h1>
+            {/* Center left block: Labels (hidden on mobile) */}
+            <div className="hidden md:flex flex-col justify-start w-full lg:w-auto gap-1">
+              <h1 className="text-base lg:text-lg">LOGO DESIGN</h1>
+              <h1 className="text-base lg:text-lg">BRAND IDENTITY</h1>
+              <h1 className="text-base lg:text-lg">DEVELOPMENT</h1>
+              <h1 className="text-base lg:text-lg">PACKAGING DESIGN</h1>
+              <h1 className="text-base lg:text-lg">WEBSITE DESIGN & DEV</h1>
             </div>
-            <div className="h-full w-full lg:w-[40vw] flex flex-col gap-10">
-              <h1 className="text-[4.5vw] leading-[5vw]">{card.title}</h1>
-              <h1 className="text-xl">{card.description}</h1>
+            {/* Main content block */}
+            <div className="flex flex-col gap-4 lg:gap-10 w-full lg:w-[40vw]">
+              <h1 className="text-3xl md:text-4xl lg:text-[4.5vw] leading-tight lg:leading-[5vw]">
+                {card.title}
+              </h1>
+              <h1 className="text-base md:text-lg lg:text-xl">
+                {card.description}
+              </h1>
               <img
-                className="h-[35vh] w-full object-cover"
+                className="h-[220px] md:h-[250px] lg:h-[35vh] w-full object-cover rounded-md"
                 src={card.img}
                 alt=""
               />
             </div>
-            <div className="text-sm flex flex-col gap-3 text-zinc-600 justify-end">
-              <h1 className=" pt-3">DISCOVER AND BRAND ALIGNMENT</h1>
-              <h1 className="border-t pt-3">
+            {/* Features/Details block */}
+            <div className="text-xs md:text-sm hidden lg:flex flex-col gap-2 md:gap-3 text-zinc-600 justify-end mt-4 lg:mt-0 w-full lg:w-auto">
+              <h1 className="pt-2 md:pt-3">DISCOVER AND BRAND ALIGNMENT</h1>
+              <h1 className="border-t pt-2 md:pt-3">
                 MOODBOARD AND CREATIVE DIRECTION
               </h1>
-              <h1 className="border-t pt-3">TYPOGRAPHY AND SYMBOL DESIGN</h1>
-              <h1 className="border-t pt-3">ICON AND WORDMARK VARIENTS</h1>
-              <h1 className="border-t pt-3">USAGE GUIDELINE AND FILE EXPORT</h1>
+              <h1 className="border-t pt-2 md:pt-3">
+                TYPOGRAPHY AND SYMBOL DESIGN
+              </h1>
+              <h1 className="border-t pt-2 md:pt-3">
+                ICON AND WORDMARK VARIENTS
+              </h1>
+              <h1 className="border-t pt-2 md:pt-3">
+                USAGE GUIDELINE AND FILE EXPORT
+              </h1>
             </div>
           </div>
         );

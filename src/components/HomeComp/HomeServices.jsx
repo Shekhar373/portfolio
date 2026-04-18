@@ -52,11 +52,11 @@ const HomeServices = () => {
         stagger: {amount:0.1},
       });
 
-      tl.to(".home-service-card", {
-        yPercent: -150,
-        ease: "expo.inOut",
-        stagger: 0.1,
-      });
+      // tl.to(".home-service-card", {
+      //   yPercent: -150,
+      //   ease: "expo.inOut",
+      //   stagger: 0.1,
+      // });
 
       // Cleanup function to remove ScrollTrigger and timeline if the query changes
       return () => {
@@ -71,12 +71,12 @@ const HomeServices = () => {
 
   return (
     <div>
-      <div className="h-[40vh] w-full bg-black text-white flex justify-between p-10 leading-[8vw]">
-        <h1 className="text-[8vw]">
+      <div className="h-[20vh] lg:h-[40vh] w-full bg-black text-white flex justify-between p-5 lg:p-10 leading-[10vw] lg:leading-[8vw]">
+        <h1 className="text-[10vw] lg:text-[8vw]">
           Services <br /> We Provide
         </h1>
-        <div className="flex gap-10 pt-5">
-          <h1>Summary:</h1>
+        <div className="hidden lg:flex gap-10 pt-5">
+          <h1 className="">Summary:</h1>
           <div className="leading-[2vw] text-zinc-600 pt-10">
             <h1 className="hover:text-white transition-all cursor-pointer">Branding</h1>
             <h1 className="hover:text-white transition-all cursor-pointer">UI/UX Design</h1>
@@ -84,8 +84,9 @@ const HomeServices = () => {
             <h1 className="hover:text-white transition-all cursor-pointer">Packaging</h1>
           </div>
         </div>
+   
       </div>
-      <div className="home-service-parent h-[220vh] lg:h-screen flex flex-col lg:flex-row  text-white justify-center bg-black items-center p-5 lg:p-10 gap-5 w-full">
+      <div className="home-service-parent h-[220vh] w-full lg:h-screen flex flex-col lg:flex-row  text-white justify-center bg-black items-center p-10 gap-5">
         {service.map((card, idx) => {
           return (
             <div
@@ -98,12 +99,13 @@ const HomeServices = () => {
                 src="null"
                 alt=""
               />
-              <h1 className="text-4xl lg:text-2xl">{card.heading}</h1>
-              <h3 className="text-2xl lg:text-sm text-zinc-500">{card.text}</h3>
+              <h1 className="text-3xl lg:text-2xl">{card.heading}</h1>
+              <h3 className="text-md lg:text-sm text-zinc-500">{card.text}</h3>
             </div>
           );
         })}
       </div>
+
       <div className="h-[40vh] w-full bg-black"></div>
     </div>
   );
