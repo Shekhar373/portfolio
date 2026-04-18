@@ -56,6 +56,12 @@ const NewHero = () => {
       ease: "expo.out",
     });
 
+    introTl.from(".hero-video video", {
+      clipPath: "inset(0 0 100% 0)",
+      duration: 1,
+      ease: "expo.out",
+    },"<");
+
     introTl.from(
       splitt.chars,
       {
@@ -115,9 +121,8 @@ const NewHero = () => {
           </div>
         </div>
         <div className="h-[40vh] w-full"></div>
-        <div className="visible lg:hidden p-5">
+        <div className="hero-video visible lg:hidden p-5">
         <video
-          ref={herovideoRef}
           autoPlay
           loop
           muted
@@ -130,7 +135,7 @@ const NewHero = () => {
           <h1 className="design-text">DESIGN </h1>
         </div>
       </div>
-      <div className="hero-video h-[100vh] w-full relative hidden lg:flex justify-center items-center">
+      <div className=" h-[100vh] w-full relative hidden lg:flex justify-center items-center">
         <video
           ref={herovideoRef}
           autoPlay
