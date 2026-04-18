@@ -126,6 +126,7 @@ const NewHero = () => {
           autoPlay
           loop
           muted
+          poster="https://img.freepik.com/premium-photo/beautiful-nature-view-by-camera_1048944-24101695.jpg?size=338&ext=jpg"
           className=" object-cover h-[40vh] w-full "
           src="/video/hero_video.mp4"
         ></video>
@@ -144,7 +145,6 @@ const NewHero = () => {
           className=" object-cover h-[100vh] w-full "
           src="/video/hero_video.mp4"
         ></video>
-        {/* <h1 className='absolute text-white text-[6vw] border-b-4'>SHOW REEL</h1> */}
       </div>
     </div>
   );

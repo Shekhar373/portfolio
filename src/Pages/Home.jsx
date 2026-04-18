@@ -16,7 +16,7 @@ import HomeServices from '../components/HomeComp/HomeServices'
 
 const Home = () => {
   return (
-    <div data-scroll-container className='bg-[#EBEAE4] overflow-x-hidden'>
+    <div className='bg-[#EBEAE4] overflow-x-hidden'>
 
        
         {/* <Navbar /> */}
