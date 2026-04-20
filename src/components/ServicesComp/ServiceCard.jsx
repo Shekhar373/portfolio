@@ -71,7 +71,7 @@ const ServiceCard = () => {
               <h1 className="text-base lg:text-lg">WEBSITE DESIGN & DEV</h1>
             </div>
             {/* Main content block */}
-            <div className="flex flex-col gap-10 lg:gap-5 w-full lg:w-[40vw]">
+            <div className="flex flex-col gap-5 lg:gap-5 w-full lg:w-[40vw]">
               <h1 className="text-3xl md:text-4xl lg:text-[4.5vw] leading-tight lg:leading-[5vw]">
                 {card.title}
               </h1>
