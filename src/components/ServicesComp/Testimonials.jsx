@@ -5,14 +5,14 @@ const Testimonials = () => {
 
     const testimonials = [
         {
-            logo:"",
+            logo:"/testimonials/The-Age-X.jpg",
             name:"Rahul Shrivastava",
             post:"founder",
             company:"The AgeX",
             description:"“It’s been really nice working with New Hue Studio. They are reliable, easy to collaborate with, and understands feedback well. The overall experience has been smooth, and I appreciate their flexibility and willingness to improve with every iteration. Wishing them the best for their future projects.”",
         },
         {
-            logo:"",
+            logo:"/testimonials/Manik-Digital.jpg",
             name:"Manik Dhiman",
             post:"founder",
             company:"Manik Digital",
@@ -38,12 +38,12 @@ const Testimonials = () => {
             {testimonials.map((testimonial, idx) => (
                 <div
                     key={idx}
-                    className="w-full sm:w-[90vw] md:w-[70vw] lg:w-[27vw] h-[40vh] md:h-[70vh] bg-white flex flex-col justify-between text-black rounded-lg overflow-hidden mb-8 lg:mb-0 shadow-lg"
+                    className="w-full sm:w-[90vw] md:w-[70vw] lg:w-[27vw] h-[60vh] md:h-[70vh] bg-white flex flex-col justify-between text-black rounded-lg overflow-hidden mb-8 lg:mb-0 shadow-lg"
                 >
                     <div className="flex items-center justify-center pt-8">
                         <img
                             className="h-[10vh] w-[16vw] sm:h-[12vh] sm:w-[12vw] md:w-[7vw] object-cover rounded-full"
-                            src="https://images.prismic.io/rejouice-2024/Z0csjZbqstJ970gj_abdul-wahid-ovaice-profile-picture3.jpg?auto=format,compress&w=2294&h=1820&fm=avif"
+                            src={testimonial.logo}
                             alt={testimonial.name}
                         />
                     </div>

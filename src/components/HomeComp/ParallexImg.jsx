@@ -8,42 +8,34 @@ const ParallexImg = () => {
     gsap.registerPlugin(ScrollTrigger)
 
     useGSAP(() => {
-        gsap.utils.toArray(".ParaImg-Container").forEach((section) => {
+        const mm = gsap.matchMedia();
 
-            const img = section.querySelector(".ParallexImg")
-            // Parallax + scale
-            gsap.fromTo(
-                img,
-                { scale: 1.06, yPercent: -20 },
-                {
-                    scale: 1,
-                    yPercent: 20,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: section,
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: true
+        mm.add("(min-width: 1024px)", () => {
+            gsap.utils.toArray(".ParaImg-Container").forEach((section) => {
+                const img = section.querySelector(".ParallexImg");
+                // Parallax + scale effect only on laptop and above
+                gsap.fromTo(
+                    img,
+                    { scale: 1.06, yPercent: -20 },
+                    {
+                        scale: 1,
+                        yPercent: 20,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: section,
+                            start: "top bottom",
+                            end: "bottom top",
+                            scrub: true
+                        }
                     }
-                }
-            )
-
+                );
+            });
         });
 
-        // Only enable this animation on screens >= 1024px using gsap.matchMedia
-        // gsap.matchMedia().add("(min-width: 1024px)", () => {
-        //     gsap.to(".para-main", {
-        //         backgroundColor: "#EBEAE4",
-        //         scrollTrigger: {
-        //             trigger: ".para-main",
-        //             // markers: true,
-        //             start: "top -170%",
-        //             end: "top -200%",
-        //             scrub: true
-        //         }
-        //     });
-        // });
-    })
+        // Cleanup matchMedia on unmount
+        return () => mm.revert();
+    });
+    
     return (
         <div className='para-main h-[170vh] lg:h-[200vh] pt-[20vh] lg:pt-0 w-full bg-black p-5 lg:p-10'>
             <section className='ParaImg-Container relative h-[40vh] lg:h-[90vh] w-full  overflow-hidden'>

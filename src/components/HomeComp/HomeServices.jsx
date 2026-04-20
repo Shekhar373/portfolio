@@ -9,22 +9,22 @@ const HomeServices = () => {
   const service = [
     {
       heading: "Logo Design",
-      svg: "",
+      svg: "/SVG/Logo.svg",
       text: "We make logos that feel right. Not just good-looking but meaningful, memorable and built to last for your brand.",
     },
     {
       heading: "Brand Identity Development",
-      svg: "",
+      svg: "/SVG/Brand.svg",
       text: "A brand is more than a logo. We help you show up the same way everywhere - Online, offline and everything between.",
     },
     {
       heading: "Packaging Design ",
-      svg: "",
+      svg: "/SVG/packaging.svg",
       text: "Good packaging tells a story before anyone reads a word. We design packs that stand out, feel great and connect.",
     },
     {
       heading: "Website Design & Development",
-      svg: "",
+      svg: "/SVG/WebDesign.svg",
       text: "Your website should work hard and look good. We design sites that are easy to use and built to grow with you.",
     },
   ];
@@ -48,7 +48,7 @@ const HomeServices = () => {
 
       tl.from(".home-service-card", {
         yPercent: 150,
-        ease: "elastic.out(1,0.3)",
+        ease: "elastic.out(1,0.4)",
         stagger: { amount: 0.1 },
       });
 
@@ -109,8 +109,8 @@ const HomeServices = () => {
                 shadow-lg hover:shadow-xl"
             >
               <img
-                className="w-[40vw] h-[15vh] sm:w-[25vw] sm:h-[18vh] md:w-[18vw] md:h-[20vh] lg:w-[10vw] lg:h-[20vh] object-contain bg-zinc-900 rounded-xl mb-3"
-                src={card.image ?? "null"}
+                className="w-[20vw] h-[15vh] sm:w-[17vw] sm:h-[18vh] md:w-[13vw] md:h-[20vh] lg:w-[7vw] lg:h-[17vh] object-contain rounded-xl mb-3"
+                src={card.svg ?? "null"}
                 alt={card.heading}
               />
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-semibold mb-2">

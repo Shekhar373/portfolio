@@ -10,20 +10,27 @@ const Swiper = () => {
 
   const swiperref = useRef(null)
 
-  useGSAP(()=> {
-    gsap.to(swiperref.current,{
-       transform: "translateX(-72.5%)",
-       scrollTrigger:{
-         trigger:swiperref.current,
-         start:"top 0%",
-         end:"top -150%",
-         pin:true,
-         scrub:2
-       }
-    })
-  })
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
+
+    const ctx = mm.add("(min-width: 1024px)", () => {
+      return gsap.to(swiperref.current, {
+        transform: "translateX(-72.5%)",
+        scrollTrigger: {
+          trigger: swiperref.current,
+          start: "top 0%",
+          end: "top -150%",
+          pin: true,
+          scrub: 2,
+        },
+      });
+    });
+
+    // Cleanup on unmount
+    return () => mm.revert();
+  });
   return (
-    <div ref={swiperref} className=' h-screen w-[360vw] relative flex'>
+    <div ref={swiperref} className=' h-[400vh] lg:h-screen w-screen lg:w-[360vw] relative flex flex-col lg:flex-row '>
         <div className='relative '>
           <img
           className='h-[70vh] w-[100vw] object-cover'
@@ -34,23 +41,23 @@ const Swiper = () => {
            </div>
 
         </div>
-        <div>
-          <img className='h-[70vh] w-[80vw] object-cover'
+        <div className='max-md:h-screen max-md:w-full'>
+          <img className='h-full lg:h-[70vh] w-full lg:w-[80vw] object-cover'
            src="/images/pin-image2.jpg" alt="" />
-            <div className=' absolute h-[30vh] w-[80vw] bg-[#2e3d50]'>
+            <div className='absolute h-[30vh] w-full lg:w-[80vw] bg-[#2e3d50]'>
 
            </div>
         </div>
-        <div>
+        <div className='max-md:h-screen max-md:w-full'>
 
-          <img className='h-[70vh] w-[80vw] object-cover'
+          <img className='h-full lg:h-[70vh] w-full lg:w-[80vw] object-cover'
            src="/images/pin-image3.jpg" alt="" />
-            <div className=' absolute h-[30vh] w-[80vw] bg-amber-50'>
+            <div className=' absolute h-[30vh] w-full lg:w-[80vw] bg-amber-50'>
 
            </div>
         </div>
 
-        <div className='h-[100vh] w-[100vw] flex    flex-col '>
+        <div className='h-[100vh] w-[100vw] flex flex-col '>
             <div className='h-[50%] w-screen text-[10vw] mt-20 pl-10'>
               <h1>Projects</h1>
             </div>

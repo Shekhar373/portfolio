@@ -114,7 +114,7 @@ const NewHero = () => {
       >
         <div className="h-screen absolute flex justify-center pt-[40vh] lg:items-center uppercase lg:pt-[5vh] w-full text-center">
           <div className="hero-text-container">
-            <div className="hero-text text-[30vw] max-md:tracking-wide lg:text-[22vw] flex flex-col lg:gap-15 lg:flex-row leading-[27vw] lg:leading-[25vw] w-full">
+            <div className="hero-text text-[30vw] max-md:tracking-wide lg:text-[22vw] flex flex-col lg:gap-[5vw] lg:flex-row leading-[27vw] lg:leading-[25vw] w-full">
               <h1>NEW HUE</h1>
               <h1>STUDIO</h1>
             </div>

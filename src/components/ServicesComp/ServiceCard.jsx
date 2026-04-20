@@ -8,28 +8,28 @@ const ServiceCard = () => {
   const serviceCard = [
     {
       title: "LOGO DESIGN",
-      img: "https://www.dzinr.in/shared/8.png",
+      img: "/Service-image/Logo.jpg",
       number: "01",
       description:
         "No matter the size of your brand, we design logos that are clear, unique and built to last. Our process is thoughtful and collaborative. We dive into your brand, understand what makes it special and turn that into a logo that looks great and feels right. We make sure it works across everything - your website, packaging, social media and more.",
     },
     {
       title: "BRAND IDENTITY DEVELOPMENT",
-      img: "https://www.dzinr.in/caseStudies/1.png",
+      img: "/Service-image/Brand-Identity.jpg",
       number: "02",
       description:
         "A strong brand is the full picture. We create visual systems that bring your brand to life and make it easy to recognize everywhere. From colors and fonts to icons, layouts and rules for using everything right, we make sure your brand feels consistent, confident and true to who you are.",
     },
     {
       title: "PACKAGING DESIGN",
-      img: "https://www.dzinr.in/caseStudies/2.png",
+      img: "/Service-image/Packaging.jpg",
       number: "03",
       description:
         "Your packaging is often the first thing people notice, so it has to make a great impression. We design packaging that looks good, feels right and reflects your brand clearly. Whether it's for shelves, unboxing videos, or online stores, our focus is on creating designs that grab attention and stand out in a crowded market.",
     },
     {
       title: "WEB DESIGN & DEVELOPMENT",
-      img: "https://www.dzinr.in/work/data-vidhya/img14.png",
+      img: "/Service-image/Web.jpg",
       number: "04",
       description:
         "We build websites that not only look great but also work smoothly and load fast. Every site is designed to reflect your brand, feel good to use and help you reach your goals, whether that's getting more clicks or sales.",
@@ -56,7 +56,7 @@ const ServiceCard = () => {
         return (
           <div
             key={idx}
-            className="service-card min-h-screen h-auto w-full flex flex-col lg:flex-row gap-6 lg:gap-10 bg-black text-white p-5 lg:p-10 pt-30 lg:pt-20 overflow-hidden"
+            className="service-card min-h-screen h-auto w-full flex flex-col lg:flex-row gap-6 lg:gap-10 bg-black text-white p-5 lg:p-10 pt-20 lg:pt-15 overflow-hidden"
           >
             {/* Left block: Service number */}
             <div className="flex justify-start lg:justify-center items-start lg:items-start w-full lg:w-auto mb-4 lg:mb-0">
@@ -71,11 +71,11 @@ const ServiceCard = () => {
               <h1 className="text-base lg:text-lg">WEBSITE DESIGN & DEV</h1>
             </div>
             {/* Main content block */}
-            <div className="flex flex-col gap-4 lg:gap-10 w-full lg:w-[40vw]">
+            <div className="flex flex-col gap-10 lg:gap-5 w-full lg:w-[40vw]">
               <h1 className="text-3xl md:text-4xl lg:text-[4.5vw] leading-tight lg:leading-[5vw]">
                 {card.title}
               </h1>
-              <h1 className="text-base md:text-lg lg:text-xl">
+              <h1 className="text-base md:text-lg lg:text-md">
                 {card.description}
               </h1>
               <img
