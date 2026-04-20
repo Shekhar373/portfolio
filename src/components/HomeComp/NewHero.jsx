@@ -45,7 +45,7 @@ const NewHero = () => {
       },
     });
     introTl.to(".hero-text-container", {
-      yPercent: window.innerWidth >= 1900 ? -40 : -50,
+      yPercent: window.innerWidth >= 1900 ? -30 : -50,
       duration: 1,
       ease: "expo.inOut",
     });
