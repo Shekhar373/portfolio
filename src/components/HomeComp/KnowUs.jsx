@@ -48,7 +48,7 @@ const KnowUs = () => {
 
 
     <div ref={horiscroll} className=' horizontal-text  font-[text-font] h-screen tracking-[1vw] font-medium pl-[250vw]  whitespace-nowrap  flex justify-center items-center text-black text-[10vw]'>
-      <h1 >Ready to stand out, not blend in</h1>
+      <h1 >Ready to stand out, not blend in?</h1>
     </div>
 
   )
