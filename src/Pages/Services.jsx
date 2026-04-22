@@ -12,7 +12,7 @@ const Services = () => {
 
   return (
     <div className="overflow-x-hidden bg-[#EBEAE4] text-[#090909]">
-      <div className="h-[140vh] lg:h-[200vh] w-full bg-black">
+      <div className="h-[105vh] lg:h-[200vh] w-full bg-black">
         <div className="h-[30vh] lg:h-[60vh] w-full flex items-end max-md:pb-10 p-5 lg:p-10">
            <h1 className="text-[14vw] lg:text-[10vw] leading-[6vw] text-white">Services</h1>
         </div>
