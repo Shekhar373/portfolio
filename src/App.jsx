@@ -12,6 +12,7 @@ import Fixed from './components/HomeComp/Fixed'
 import ProjectDetails from './components/WorkComp/ProjectDetails'
 import ScrollToTop from './components/common/ScrollToTop'
 import NewPageTransition from './components/common/NewPageTransition'
+import Cursor from './components/common/Cursor'
 
 
 
@@ -48,6 +49,8 @@ const App = () => {
       <nav>
         <Loader />
         <Fixed />
+        
+        <Cursor />
       </nav>
       <div id='smooth-wrapper'>
         <div id='smooth-content'
