@@ -37,7 +37,7 @@ const ParallexImg = () => {
     });
     
     return (
-        <div className='para-main h-[170vh] lg:h-[200vh] pt-[20vh] lg:pt-0 w-full bg-black p-5 lg:p-10'>
+        <div className='para-main h-[140vh] lg:h-[200vh] pt-[10vh] lg:pt-0 w-full bg-black p-5 lg:p-10'>
             <section className='ParaImg-Container relative h-[40vh] lg:h-[90vh] w-full  overflow-hidden'>
                 <img className='ParallexImg absolute h-full w-full object-cover '
                     src="/images/8.jpg" alt="" />

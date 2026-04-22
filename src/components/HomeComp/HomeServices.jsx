@@ -124,7 +124,7 @@ const HomeServices = () => {
         })}
       </div>
 
-      <div className="h-[40vh] w-full bg-black"></div>
+      <div className="h-[5vh] lg:h-[40vh] w-full bg-black"></div>
     </div>
   );
 };

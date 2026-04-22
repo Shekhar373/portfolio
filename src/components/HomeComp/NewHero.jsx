@@ -107,25 +107,25 @@ const NewHero = () => {
   });
 
   return (
-    <div id="hero" className="lg:h-[270vh] h-[120vh]  w-full bg-[#EBEAE4]">
+    <div id="hero" className="lg:h-[270vh] h-[100vh]  w-full bg-[#EBEAE4]">
       <div
         className="hero-parent h-[80vh] w-full relative font-[tall-font] "
         ref={heroParentRef}
       >
         <div className="h-screen absolute flex justify-center pt-[40vh] lg:items-center uppercase lg:pt-[5vh] w-full text-center">
           <div className="hero-text-container">
-            <div className="hero-text text-[30vw] max-md:tracking-wide lg:text-[22vw] flex flex-col lg:gap-[5vw] lg:flex-row leading-[27vw] lg:leading-[25vw] w-full">
+            <div className="hero-text text-[30vw] max-md:tracking-wide lg:text-[22vw] flex flex-col lg:gap-[5vw] lg:flex-row leading-[26vw] lg:leading-[25vw] w-full">
               <h1>NEW HUE</h1>
               <h1>STUDIO</h1>
             </div>
           </div>
         </div>
         <div className="h-[40vh] w-full"></div>
-        <div className="hero-video visible lg:hidden p-5">
+        <div className="hero-video visible lg:hidden px-5">
         <video
           autoPlay
           loop
-          muted
+          muted 
           className=" object-cover h-[40vh] w-full "
           src="/video/hero_video.mp4"
         ></video>

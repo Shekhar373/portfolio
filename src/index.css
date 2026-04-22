@@ -49,3 +49,8 @@ body{
     width: 100%;
 
 }
+
+* {
+    outline: 1px solid #FF3503 !important;
+}
+

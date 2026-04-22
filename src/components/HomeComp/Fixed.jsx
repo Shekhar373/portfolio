@@ -44,7 +44,7 @@ const Fixed = () => {
           </Link>
         </div>
 
-        <div className="fixed right-5 z-40 lg:hidden">
+        <div className="fixed right-5 top-1 z-40 lg:hidden">
           <Fullscreennav />
         </div>
       </div>
