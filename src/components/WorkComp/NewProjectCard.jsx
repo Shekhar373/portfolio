@@ -49,9 +49,9 @@ const NewProjectCard = () => {
                                 alt=""
                             />
                         </div>
-                        <h1 data-speed='0.3' className="absolute inset-0 flex items-center justify-center text-white text-5xl font-bold pointer-events-none z-10 text-center drop-shadow-lg">
+                        {/* <h1 data-speed='0.3' className="absolute inset-0 flex items-center justify-center text-white text-5xl font-bold pointer-events-none z-10 text-center drop-shadow-lg">
                             {project.title}
-                        </h1>
+                        </h1> */}
                     </div>
                 </Link>
             ))}

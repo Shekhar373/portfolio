@@ -54,10 +54,10 @@ const Navbar = () => {
           data-speed='0.6'
           className=' text-white text-[21vw] tracking-tighter mt-[20vh] text-center overflow-hidden  leading-[15vw]'
         >
-          <h1 className='hero-text-main font-[heading-font] font-normal'>
+          <h1 className='hero-text-main font-[text-font] font-normal'>
             NEWHUE
           </h1>
-          <h1 className='hero-text-bottom text-white font-[heading-font] text-3xl tracking-[10vw] lg:tracking-[16vw] -mr-[10vw] lg:-mr-[16vw] mt-10 text-center'>
+          <h1 className='hero-text-bottom text-white font-[text-font] text-3xl tracking-[10vw] lg:tracking-[16vw] -mr-[10vw] lg:-mr-[16vw] mt-10 text-center'>
             STUDIO
           </h1>
         </div>

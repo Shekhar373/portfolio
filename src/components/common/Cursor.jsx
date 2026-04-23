@@ -11,7 +11,7 @@ const Cursor = () => {
         gsap.to(cursorRef.current, {
           x: e.clientX - 25,
           y: e.clientY - 25,
-          duration: 0.5,
+          duration: 1,
           // ease: "expo.out",
           ease: "power4.out",
         });

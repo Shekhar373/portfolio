@@ -2,7 +2,6 @@ import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
-import NewServiceCard from "../components/ServicesComp/NewServiceCard";
 import NewFooter from "../components/common/NewFooter";
 import Testimonials from "../components/ServicesComp/Testimonials";
 import ServiceCard from "../components/ServicesComp/ServiceCard";
@@ -19,7 +18,7 @@ const Services = () => {
         <div className="h-screen w-full lg:px-10">
           <video 
           className="h-[70vh] lg:h-full w-full object-cover"
-          loop muted autoPlay
+          loop muted autoPlay playsInline
            src="/video/hero_video.mp4"></video>
         </div>
       </div>

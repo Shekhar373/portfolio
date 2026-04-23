@@ -126,6 +126,7 @@ const NewHero = () => {
           autoPlay
           loop
           muted 
+          playsInline
           className=" object-cover h-[40vh] w-full "
           src="/video/hero_video.mp4"
         ></video>
@@ -141,6 +142,7 @@ const NewHero = () => {
           autoPlay
           loop
           muted
+          playsInline
           className=" object-cover h-[100vh] w-full "
           src="/video/hero_video.mp4"
         ></video>
