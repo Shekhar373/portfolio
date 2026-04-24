@@ -13,9 +13,11 @@ const Home = () => {
   return (
     <div className="bg-[#EBEAE4] overflow-x-hidden">
       <NewHero />
+      <div className="bg-black">
       <Text1 />
       <ParallexImg />
       <HomeServices />
+      </div>
       <Swiper />
       <Text2 />
       <Video />

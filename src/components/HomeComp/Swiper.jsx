@@ -1,20 +1,16 @@
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
-import React, { useRef } from 'react'
-import { Link } from 'react-router-dom'
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Swiper = () => {
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger);
 
-  const swiperref = useRef(null)
+  const swiperref = useRef(null);
 
   useGSAP(() => {
-    const mm = gsap.matchMedia();
-
-    const ctx = mm.add("(min-width: 1024px)", () => {
-      return gsap.to(swiperref.current, {
+    gsap.to(swiperref.current, {
         transform: "translateX(-72.5%)",
         scrollTrigger: {
           trigger: swiperref.current,
@@ -26,48 +22,54 @@ const Swiper = () => {
       });
     });
 
-    // Cleanup on unmount
-    return () => mm.revert();
-  });
   return (
-    <div ref={swiperref} className=' h-[400vh] lg:h-screen w-screen lg:w-[360vw] relative flex flex-col lg:flex-row '>
-        <div className='relative '>
-          <img
-          className='h-[70vh] w-[100vw] object-cover'
-           src="/images/pin-image.jpg" alt="" />
-
-           <div className=' absolute h-[30vh] w-[100vw] bg-[#415030]'>
-
-           </div>
-
+    <div
+      ref={swiperref}
+      className="h-screen w-[360vw] relative flex flex-row max-md:w-[400vw] max-sm:w-[420vw] overflow-hidden"
+    >
+      {/* Slide 1 */}
+      <div className="relative h-screen w-[100vw] flex-shrink-0">
+        <img
+          className="h-[70vh] w-full object-cover max-md:h-[40vh] max-sm:h-[30vh]"
+          src="/images/pin-image.jpg"
+          alt=""
+        />
+        <div className="absolute bottom-0 left-0 h-[30vh] w-full bg-[#415030] max-md:h-[15vh] max-sm:h-[10vh]"></div>
+      </div>
+      {/* Slide 2 */}
+      <div className="relative h-screen w-[100vw] flex-shrink-0">
+        <img
+          className="h-full lg:h-[70vh] w-full object-cover max-md:h-[40vh] max-sm:h-[30vh]"
+          src="/images/pin-image2.jpg"
+          alt=""
+        />
+        <div className="absolute bottom-0 left-0 h-[30vh] w-full bg-[#2e3d50] max-md:h-[15vh] max-sm:h-[10vh]"></div>
+      </div>
+      {/* Slide 3 */}
+      <div className="relative h-screen w-[100vw] flex-shrink-0">
+        <img
+          className="h-full lg:h-[70vh] w-full object-cover max-md:h-[40vh] max-sm:h-[30vh]"
+          src="/images/pin-image3.jpg"
+          alt=""
+        />
+        <div className="absolute bottom-0 left-0 h-[30vh] w-full bg-amber-50 max-md:h-[15vh] max-sm:h-[10vh]"></div>
+      </div>
+      {/* Slide 4: Text Section */}
+      <div className="h-screen w-[100vw] flex flex-col flex-shrink-0 justify-center">
+        <div className="h-[50vh] w-full flex items-end text-[8vw] mt-10 pl-4 max-md:text-[10vw] max-sm:text-[12vw]">
+          <h1>Projects</h1>
         </div>
-        <div className='max-md:h-screen max-md:w-full'>
-          <img className='h-full lg:h-[70vh] w-full lg:w-[80vw] object-cover'
-           src="/images/pin-image2.jpg" alt="" />
-            <div className='absolute h-[30vh] w-full lg:w-[80vw] bg-[#2e3d50]'>
-
-           </div>
+        <div className="h-[50vh] w-full flex items-start px-4 pt-4 lg:text-4xl sm:text-2xl max-md:text-xl max-sm:text-base">
+          <h1>
+            These are not just projects, they are stories of our clients, our work, and the impact we made.{" "}
+            <Link className="uppercase font-medium underline" to="/work">
+              See More
+            </Link>
+          </h1>
         </div>
-        <div className='max-md:h-screen max-md:w-full'>
-
-          <img className='h-full lg:h-[70vh] w-full lg:w-[80vw] object-cover'
-           src="/images/pin-image3.jpg" alt="" />
-            <div className=' absolute h-[30vh] w-full lg:w-[80vw] bg-amber-50'>
-
-           </div>
-        </div>
-
-        <div className='h-[100vh] w-[100vw] flex flex-col '>
-            <div className='h-[50%] w-screen text-[10vw] mt-20 pl-10'>
-              <h1>Projects</h1>
-            </div>
-            <div className='h-[50%] w-screen lg:text-4xl sm:text-2xl  px-10'>
-              <h1>These are not just projects, they are stories of our clients, our work, and the impact we made. <Link className='uppercase font-medium ' to="/work">See More</Link></h1>
-              
-            </div>
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Swiper
+export default Swiper;
