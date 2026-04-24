@@ -73,7 +73,7 @@ const Fullscreennav = () => {
           <h1>NEW HUE STUDIO</h1>
         </div>
 
-        <div className="fullscreen-nav-link text-5xl sm:text-6xl md:text-8xl leading-[16vw] md:leading-[9vw]">
+        <div className="fullscreen-nav-link text-center text-5xl sm:text-6xl md:text-8xl leading-[16vw] md:leading-[9vw]">
           <Link
             className="inline-block border-t w-full"
             to="/"
