@@ -62,7 +62,7 @@ const Fullscreennav = () => {
       {/* Menu stays mounted */}
       <div
         ref={nav}
-        className="fullnav fixed top-0 left-0 w-screen h-[90vh] bg-[#3D271A] text-[#D7CBBE] flex flex-col justify-between py-0 px-5"
+        className="fullnav fixed top-0 left-0 w-screen h-screen bg-[#3D271A] text-[#D7CBBE] flex flex-col justify-between py-0 px-5 pb-[8vh]"
         style={{ visibility: "hidden", opacity: 0 }}
       >
         <header className="fixed right-5 top-1">
