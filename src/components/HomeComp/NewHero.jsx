@@ -56,11 +56,15 @@ const NewHero = () => {
       ease: "expo.out",
     });
 
-    introTl.from(".hero-video video", {
-      clipPath: "inset(0 0 100% 0)",
-      duration: 1,
-      ease: "expo.out",
-    },"<");
+    introTl.from(
+      ".hero-video video",
+      {
+        clipPath: "inset(0 0 100% 0)",
+        duration: 1,
+        ease: "expo.out",
+      },
+      "<",
+    );
 
     introTl.from(
       splitt.chars,
@@ -122,14 +126,14 @@ const NewHero = () => {
         </div>
         <div className="h-[40vh] w-full"></div>
         <div className="hero-video visible lg:hidden px-5">
-        <video
-          autoPlay
-          loop
-          muted 
-          playsInline
-          className=" object-cover h-[40vh] w-full "
-          src="/video/hero_video.mp4"
-        ></video>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className=" object-cover h-[40vh] w-full "
+            src="/video/hero_video.mp4"
+          ></video>
         </div>
         <div className="sub-heading h-[20vh] lg:h-[40vh]  w-full flex lg:pt-[20vh] gap-2 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
           <h1 className="visual-text">A VISUAL</h1>

@@ -39,7 +39,7 @@ const Text1 = () => {
     <>
       <div
         ref={firsttext}
-        className="first-text bg-black text-[7.5vw] md:text-[5vw] lg:text-[3.5vw] leading-[9.5vw] md:leading-[6.6vw] lg:leading-[4.5vw] pt-[20vh] lg:pt-[10vh] h-[80vh] lg:h-screen w-full  text-white flex p-5 lg:p-10"
+        className="first-text text-[7.5vw] md:text-[5vw] lg:text-[3.5vw] leading-[9.5vw] md:leading-[6.6vw] lg:leading-[4.5vw] pt-[5vh] lg:pt-[10vh] h-[60vh] lg:h-screen w-full  text-white flex p-5 lg:p-10"
       >
         <h1>
           New Hue Studio is a full-service creative agency offering graphic

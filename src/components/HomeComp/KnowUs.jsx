@@ -18,7 +18,7 @@ const KnowUs = () => {
         trigger: horiscroll.current,
         // markers: true,
         start: "top 0%",
-        end: "top -500%", // was -150%, now much longer scroll distance
+        end: "top -700%", // was -150%, now much longer scroll distance
         pin: true,
         scrub: 1, // was 3, you may increase even to 4 or 5, but with a longer scroll it's already much slower
       },

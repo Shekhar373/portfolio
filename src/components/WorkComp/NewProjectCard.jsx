@@ -14,13 +14,13 @@ const NewProjectCard = () => {
 
             const img = section.querySelector(".workcard-img")
             const clip = section.querySelector(".clip-wrapper")
-            // Parallax + scale
+            
             gsap.fromTo(
                 img,
-                { scale: 1, yPercent: -30 },
+                { scale: 1, yPercent: window.innerWidth >= 1024 ? -30 : -10 },
                 {
                     scale: 1,
-                    yPercent: 30,
+                    yPercent: window.innerWidth >= 1024 ? 30 : 10 ,
                     ease: "none",
                     scrollTrigger: {
                         trigger: section,
@@ -40,7 +40,7 @@ const NewProjectCard = () => {
         <div className='flex flex-col'>
             {projects.map((project) => (
                 <Link to={`/work/${project.slug}`} key={project.slug}>
-                    <div className="h-screen w-full workcard-main overflow-hidden relative">
+                    <div className="h-[70vh] lg:h-screen w-full workcard-main overflow-hidden relative">
 
                         <div className="clip-wrapper h-full w-full">
                             <img
