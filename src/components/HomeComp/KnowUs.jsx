@@ -13,7 +13,7 @@ const KnowUs = () => {
 
     // Slow down by increasing the range of scroll (make end further)
     const scrollTween = gsap.to(horiscroll.current, {
-      xPercent: -140,
+      xPercent: -143,
       scrollTrigger: {
         trigger: horiscroll.current,
         // markers: true,
@@ -44,7 +44,7 @@ const KnowUs = () => {
   return (
     <div
       ref={horiscroll}
-      className=" horizontal-text  font-[text-font] h-screen tracking-[1vw] font-medium pl-[250vw]  whitespace-nowrap  flex justify-center items-center text-black text-[10vw]"
+      className=" horizontal-text  font-[text-font] tracking-tight h-screen pl-[250vw]  whitespace-nowrap  flex justify-center items-center text-black text-[13vw]"
     >
       <h1>Ready to stand out, not blend in?</h1>
     </div>

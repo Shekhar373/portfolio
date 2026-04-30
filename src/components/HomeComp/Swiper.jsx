@@ -11,13 +11,13 @@ const Swiper = () => {
 
   useGSAP(() => {
     gsap.to(swiperref.current, {
-        transform: "translateX(-72.5%)",
+        transform: "translateX(-83.5%)",
         scrollTrigger: {
           trigger: swiperref.current,
           start: "top 0%",
-          end: "top -150%",
+          end: "top -250%",
           pin: true,
-          scrub: 2,
+          scrub: 0.5,
         },
       });
     });
@@ -31,7 +31,7 @@ const Swiper = () => {
       <div className="relative h-screen w-[100vw] flex-shrink-0">
         <img
           className="h-[70vh] w-full object-cover max-md:h-[40vh] max-sm:h-[30vh]"
-          src="/images/pin-image.jpg"
+          src="/images/pin-img-1.webp"
           alt=""
         />
         <div className="absolute bottom-0 left-0 h-[30vh] w-full bg-[#415030] max-md:h-[15vh] max-sm:h-[10vh]"></div>
@@ -40,7 +40,7 @@ const Swiper = () => {
       <div className="relative h-screen w-[100vw] flex-shrink-0">
         <img
           className="h-full lg:h-[70vh] w-full object-cover max-md:h-[40vh] max-sm:h-[30vh]"
-          src="/images/pin-image2.jpg"
+          src="/images/pin-img-2.webp"
           alt=""
         />
         <div className="absolute bottom-0 left-0 h-[30vh] w-full bg-[#2e3d50] max-md:h-[15vh] max-sm:h-[10vh]"></div>
@@ -49,7 +49,7 @@ const Swiper = () => {
       <div className="relative h-screen w-[100vw] flex-shrink-0">
         <img
           className="h-full lg:h-[70vh] w-full object-cover max-md:h-[40vh] max-sm:h-[30vh]"
-          src="/images/pin-image3.jpg"
+          src="/images/pin-img-3.webp"
           alt=""
         />
         <div className="absolute bottom-0 left-0 h-[30vh] w-full bg-amber-50 max-md:h-[15vh] max-sm:h-[10vh]"></div>

@@ -33,9 +33,6 @@ const Fixed = () => {
           <Link className="border-animate" to="/work">
             Work
           </Link>
-          <Link className="border-animate" to="/about">
-            About
-          </Link>
           <Link className="border-animate" to="/services">
             Services
           </Link>

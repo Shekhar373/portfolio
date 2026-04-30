@@ -19,11 +19,11 @@ const Testimonials = () => {
             description:"“I recently had the opportunity to work with New Studio for graphic designing services, and the experience was truly impressive. It was a great pleasure working with them, and I genuinely enjoyed the entire process.Their team demonstrates a high level of professionalism and expertise, delivering advanced-level editing and visually appealing designs that perfectly align with modern standards.”",
         },
         {
-            logo:"",
-            name:"Random",
+            logo:"/testimonials/Black.png",
+            name:"Tanveer",
             post:"founder",
-            company:"Random",
-            description:"“Rejouice helped us bring our vision of data-backed storytelling to life in a novel, engaging and highly memorable way.”",
+            company:"Hair Art Salon",
+            description:"Working with New Hue Studio has been a great experience for us. They managed our social media exceptionally well, delivering high-quality video editing and professional shoots. Their team also created eye-catching creatives that truly elevated our online presence.I would highly recommend New Hue Studio to anyone looking for expert video editing or complete social media management. Definitely give them a try.",
         },
        
        
@@ -42,7 +42,7 @@ const Testimonials = () => {
                 >
                     <div className="flex items-center justify-center pt-8">
                         <img
-                            className="h-[10vh] w-[16vw] sm:h-[12vh] sm:w-[12vw] md:w-[7vw] object-cover rounded-full"
+                            className="h-[10vh] w-[16vw] sm:h-[12vh] sm:w-[12vw] md:w-[7vw] object-cover"
                             src={testimonial.logo}
                             alt={testimonial.name}
                         />

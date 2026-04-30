@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { CustomEase, ScrollTrigger } from "gsap/all";
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const HomeServices = () => {
   const cardRef = useRef(null);
@@ -49,7 +50,10 @@ const HomeServices = () => {
       tl.from(".home-service-card", {
         yPercent: 150,
         // ease: "elastic.out(1,0.4)",
-        ease: CustomEase.create("custom", "M0,0 C0,0 0.023,0.156 0.031,0.226 0.048,0.373 0.078,0.719 0.094,0.867 0.102,0.941 0.114,1.055 0.123,1.115 0.13,1.162 0.145,1.254 0.154,1.293 0.158,1.31 0.164,1.33 0.169,1.341 0.173,1.349 0.18,1.365 0.186,1.369 0.19,1.372 0.199,1.372 0.204,1.369 0.212,1.365 0.222,1.344 0.227,1.334 0.234,1.319 0.243,1.29 0.251,1.265 0.273,1.198 0.314,1.03 0.338,0.965 0.348,0.94 0.363,0.91 0.372,0.896 0.376,0.889 0.383,0.882 0.387,0.879 0.391,0.875 0.4,0.87 0.405,0.869 0.41,0.867 0.419,0.868 0.423,0.869 0.429,0.871 0.437,0.874 0.445,0.881 0.473,0.905 0.529,0.986 0.556,1.012 0.567,1.021 0.58,1.031 0.588,1.035 0.596,1.039 0.612,1.045 0.621,1.046 0.631,1.047 0.651,1.044 0.664,1.041 0.69,1.034 0.748,1.003 0.774,0.995 0.791,0.99 0.814,0.984 0.834,0.983 0.882,0.981 0.992,1.003 1.045,1.005 1.099,1.007 1.208,0.998 1.261,0.998 1.309,0.997 1,1 1,1 "),
+        ease: CustomEase.create(
+          "custom",
+          "M0,0 C0,0 0.023,0.156 0.031,0.226 0.048,0.373 0.078,0.719 0.094,0.867 0.102,0.941 0.114,1.055 0.123,1.115 0.13,1.162 0.145,1.254 0.154,1.293 0.158,1.31 0.164,1.33 0.169,1.341 0.173,1.349 0.18,1.365 0.186,1.369 0.19,1.372 0.199,1.372 0.204,1.369 0.212,1.365 0.222,1.344 0.227,1.334 0.234,1.319 0.243,1.29 0.251,1.265 0.273,1.198 0.314,1.03 0.338,0.965 0.348,0.94 0.363,0.91 0.372,0.896 0.376,0.889 0.383,0.882 0.387,0.879 0.391,0.875 0.4,0.87 0.405,0.869 0.41,0.867 0.419,0.868 0.423,0.869 0.429,0.871 0.437,0.874 0.445,0.881 0.473,0.905 0.529,0.986 0.556,1.012 0.567,1.021 0.58,1.031 0.588,1.035 0.596,1.039 0.612,1.045 0.621,1.046 0.631,1.047 0.651,1.044 0.664,1.041 0.69,1.034 0.748,1.003 0.774,0.995 0.791,0.99 0.814,0.984 0.834,0.983 0.882,0.981 0.992,1.003 1.045,1.005 1.099,1.007 1.208,0.998 1.261,0.998 1.309,0.997 1,1 1,1 ",
+        ),
         stagger: { amount: 0.1 },
       });
 
@@ -79,18 +83,26 @@ const HomeServices = () => {
         <div className="hidden lg:flex gap-10 pt-5">
           <h1 className="">Summary:</h1>
           <div className="leading-[2vw] text-zinc-600 pt-10">
-            <h1 className="hover:text-white transition-all cursor-pointer">
-              Branding
-            </h1>
-            <h1 className="hover:text-white transition-all cursor-pointer">
-              UI/UX Design
-            </h1>
-            <h1 className="hover:text-white transition-all cursor-pointer">
-              Development
-            </h1>
-            <h1 className="hover:text-white transition-all cursor-pointer">
-              Packaging
-            </h1>
+            <Link to="/services">
+              <h1 className="hover:text-white transition-all cursor-pointer">
+                Branding
+              </h1>
+            </Link>
+            <Link to="/services">
+              <h1 className="hover:text-white transition-all cursor-pointer">
+                Packaging
+              </h1>
+            </Link>
+            <Link to="/services">
+              <h1 className="hover:text-white transition-all cursor-pointer">
+                UI/UX design
+              </h1>
+            </Link>
+            <Link to="/services">
+              <h1 className="hover:text-white transition-all cursor-pointer">
+                Development
+              </h1>
+            </Link>
           </div>
         </div>
       </div>

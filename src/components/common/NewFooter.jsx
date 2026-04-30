@@ -34,7 +34,6 @@ export default function Footer() {
                             <h3 className="border-animate inline-block w-fit cursor-pointer">Home</h3>
                             <h3 className="border-animate inline-block w-fit cursor-pointer">Work</h3>
                             <h3 className="border-animate inline-block w-fit cursor-pointer">Services</h3>
-                            <h3 className="border-animate inline-block w-fit cursor-pointer">About</h3>
                             <h3 className="border-animate inline-block w-fit cursor-pointer">Contact</h3>
                         </div>
                         {/* Socials */}

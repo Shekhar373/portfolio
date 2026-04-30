@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Home from './Pages/Home'
-import About from './Pages/About'
 import { Route, Routes } from 'react-router-dom'
 import Work from './Pages/Work'
 import Services from './Pages/Services'
@@ -62,7 +61,6 @@ const App = () => {
               <Route path='/' element={<Home />} />
               <Route path='/work' element={<Work />} />
               <Route path="/work/:slug" element={<ProjectDetails />} />
-              <Route path='/about' element={<About />} />
               <Route path='/services' element={<Services />} />
               <Route path='/contact' element={<Contact />} />
             </Routes>

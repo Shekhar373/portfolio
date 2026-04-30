@@ -62,7 +62,7 @@ const Fullscreennav = () => {
       {/* Menu stays mounted */}
       <div
         ref={nav}
-        className="fullnav fixed top-0 left-0 w-screen h-screen bg-[#3D271A] text-[#D7CBBE] flex flex-col justify-between py-0 px-5 pb-[8vh]"
+        className="fullnav fixed top-0 left-0 w-screen h-screen bg-[#262424] text-[#EEE5DA] flex flex-col justify-between py-0 px-5 pb-[8vh]"
         style={{ visibility: "hidden", opacity: 0 }}
       >
         <header className="fixed right-5 top-1">
@@ -92,14 +92,6 @@ const Fullscreennav = () => {
           <br />
           <Link
             className="inline-block border-t w-full"
-            to="/about"
-            onClick={handleLinkClick}
-          >
-            About
-          </Link>
-          <br />
-          <Link
-            className="inline-block border-t w-full"
             to="/services"
             onClick={handleLinkClick}
           >
@@ -125,6 +117,13 @@ const Fullscreennav = () => {
           </a>
           <a href="#">
             <img
+              className=" h-9 w-9 "
+              src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20512%22%3E%0A%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M279.14%20288l14.22-92.66h-88.91V127.69c0-25.35%2012.42-50.06%2052.24-50.06H293V6.26S259.43%200%20225.36%200C141.09%200%2089.09%2054.42%2089.09%20153.12v42.22H0V288h89.09v224h107.36V288z%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
               className="h-10 w-10 "
               src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%0A%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M389.2%2048h70.6L312.6%20215.6%20480%20464H347.4L241.6%20318.6%20110.6%20464H40l157.8-181.2L32%2048h136.6l96.2%20132.2L389.2%2048z%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E"
               alt=""
@@ -137,13 +136,7 @@ const Fullscreennav = () => {
               alt=""
             />
           </a>
-          <a href="#">
-            <img
-              className=" h-10 w-10 "
-              src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20512%22%3E%0A%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M279.14%20288l14.22-92.66h-88.91V127.69c0-25.35%2012.42-50.06%2052.24-50.06H293V6.26S259.43%200%20225.36%200C141.09%200%2089.09%2054.42%2089.09%20153.12v42.22H0V288h89.09v224h107.36V288z%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E"
-              alt=""
-            />
-          </a>
+          
         </div>
       </div>
     </div>

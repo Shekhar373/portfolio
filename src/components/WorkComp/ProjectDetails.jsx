@@ -145,7 +145,7 @@ const ProjectDetails = () => {
         {project.image1 && (
           <section className="overflow-hidden w-full h-[60vh] lg:h-screen aspect-[4/3] sm:aspect-[16/7] md:aspect-[16/7] px-2 sm:px-6 md:px-10">
             <img
-              src={project.image1}
+              src={project.image8}
               className="reveal-img w-full h-full rounded-xl md:rounded-2xl object-cover"
               alt=""
               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
