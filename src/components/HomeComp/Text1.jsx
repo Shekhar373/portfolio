@@ -42,10 +42,9 @@ const Text1 = () => {
         className="first-text text-[7.5vw] md:text-[5vw] lg:text-[3.5vw] leading-[9.5vw] md:leading-[6.6vw] lg:leading-[4.5vw] pt-[5vh] lg:pt-[10vh] h-[60vh] lg:h-screen w-full  text-white flex p-5 lg:p-10"
       >
         <h1>
-          New Hue Studio is a full-service creative agency offering graphic
-          design, video editing, motion graphics, social media marketing,
-          performance advertising, and 3D websites. We mix creativity to build
-          brands that stand out
+        We don't just design brands. We make them impossible to forget.
+New Hue Studio is where branding, visual design, motion, and 3D web experiences come together — built to turn heads and hold attention long after the first glance.
+
         </h1>
       </div>
       <div>

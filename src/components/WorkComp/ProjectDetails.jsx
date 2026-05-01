@@ -72,9 +72,8 @@ const ProjectDetails = () => {
 
       {/* DESCRIPTION */}
       <section className="max-w-3xl md:max-w-5xl mx-auto py-10 md:py-20 px-4 sm:px-6 md:px-12">
-        <p className="description text-base sm:text-xl md:text-3xl leading-relaxed font-light">
-          {project.description ||
-            "This is a creatively crafted project with a memorable digital identity."}
+        <p className="description text-base sm:text-xl md:text-3xl font-light">
+          {project.description}
         </p>
       </section>
 

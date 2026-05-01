@@ -28,7 +28,8 @@ const WorkHeader = () => {
   })
   return (
     <div className='project-header h-[70vh] lg:h-[90vh] w-full text-[5vw] lg:text-[2.5vw] flex items-end p-5 lg:p-10 pb-[5vh] leading-[6vw] lg:leading-[3.5vw]'>
-      <h1><span className='pl-[15vw]'>Browse</span> New Hue Studio's portfolio of creative work — including brand identity design, social media campaigns, video production, motion graphics, and performance marketing results.</h1>
+      <h1><span className='pl-[15vw]'>Browse</span> New Hue Studio Portfolio – Branding, Design & 3D Web
+      Showcasing identity design, motion graphics, video, social media creatives, and 3D web experiences that help brands stand out.</h1>
     </div>
   )
 }

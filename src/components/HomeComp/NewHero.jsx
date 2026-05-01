@@ -136,8 +136,8 @@ const NewHero = () => {
           ></video>
         </div>
         <div className="sub-heading h-[20vh] lg:h-[40vh]  w-full flex lg:pt-[20vh] gap-2 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
-          <h1 className="visual-text">A VISUAL</h1>
-          <h1 className="design-text">DESIGN </h1>
+          <h1 className="visual-text">A DESIGN</h1>
+          <h1 className="design-text">STUDIO </h1>
         </div>
       </div>
       <div className=" h-[100vh] w-full relative hidden lg:flex justify-center items-center">

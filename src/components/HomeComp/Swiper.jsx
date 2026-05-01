@@ -10,8 +10,11 @@ const Swiper = () => {
   const swiperref = useRef(null);
 
   useGSAP(() => {
-    gsap.to(swiperref.current, {
-        transform: "translateX(-83.5%)",
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 1024px)", () => {
+      gsap.to(swiperref.current, {
+        transform: "translateX(-75%)",
         scrollTrigger: {
           trigger: swiperref.current,
           start: "top 0%",
@@ -21,11 +24,12 @@ const Swiper = () => {
         },
       });
     });
+  });
 
   return (
     <div
       ref={swiperref}
-      className="h-screen w-[360vw] relative flex flex-row max-md:w-[400vw] max-sm:w-[420vw] overflow-hidden"
+      className="h-screen w-full relative flex flex-col lg:flex-row lg:w-[400vw] overflow-hidden"
     >
       {/* Slide 1 */}
       <div className="relative h-screen w-[100vw] flex-shrink-0">
@@ -61,7 +65,8 @@ const Swiper = () => {
         </div>
         <div className="h-[50vh] w-full flex items-start px-4 pt-4 lg:text-4xl sm:text-2xl max-md:text-xl max-sm:text-base">
           <h1>
-            These are not just projects, they are stories of our clients, our work, and the impact we made.{" "}
+            These are not just projects, they are stories of our clients, our
+            work, and the impact we made.{" "}
             <Link className="uppercase font-medium underline" to="/work">
               See More
             </Link>

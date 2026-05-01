@@ -1,7 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { Rotate } from "hamburger-react";
 import React from "react";
 
 const ServiceCard = () => {
@@ -11,28 +10,28 @@ const ServiceCard = () => {
       img: "/Service-image/Logo.jpg",
       number: "01",
       description:
-        "No matter the size of your brand, we design logos that are clear, unique and built to last. Our process is thoughtful and collaborative. We dive into your brand, understand what makes it special and turn that into a logo that looks great and feels right. We make sure it works across everything - your website, packaging, social media and more.",
+        "We design logos that are clear, distinctive, and built to last. Every mark is crafted through a thoughtful process that translates your brand’s essence into a strong, versatile identity—ready to perform across digital and physical touchpoints.",
     },
     {
       title: "BRAND IDENTITY DEVELOPMENT",
       img: "/Service-image/Brand-Identity.jpg",
       number: "02",
       description:
-        "A strong brand is the full picture. We create visual systems that bring your brand to life and make it easy to recognize everywhere. From colors and fonts to icons, layouts and rules for using everything right, we make sure your brand feels consistent, confident and true to who you are.",
+        "A brand is more than a logo—it’s a complete visual system. We create cohesive identities using color, typography, and design elements that ensure your brand feels consistent, recognizable, and confidently positioned everywhere it appears.",
     },
     {
       title: "PACKAGING DESIGN",
       img: "/Service-image/Packaging.jpg",
       number: "03",
       description:
-        "Your packaging is often the first thing people notice, so it has to make a great impression. We design packaging that looks good, feels right and reflects your brand clearly. Whether it's for shelves, unboxing videos, or online stores, our focus is on creating designs that grab attention and stand out in a crowded market.",
+        "Packaging is your first impression—and it needs to stand out. We design visually striking and brand-aligned packaging that captures attention, enhances product appeal, and creates a memorable experience both on shelves and online.",
     },
     {
       title: "WEB DESIGN & DEVELOPMENT",
       img: "/Service-image/Web.jpg",
       number: "04",
       description:
-        "We build websites that not only look great but also work smoothly and load fast. Every site is designed to reflect your brand, feel good to use and help you reach your goals, whether that's getting more clicks or sales.",
+        "We design and develop high-performing websites that are fast, responsive, and visually refined. Along with seamless user experiences, we specialize in 3D web development, crafting immersive digital environments that set your brand apart.",
     },
   ];
 
@@ -64,12 +63,12 @@ const ServiceCard = () => {
             </div>
             {/* Center left block: Labels (hidden on mobile) */}
             <div className="hidden md:flex flex-col justify-start w-full lg:w-auto gap-1">
-              <h1 className="text-base lg:text-lg">LOGO DESIGN</h1>
-              <h1 className="text-base lg:text-lg">BRAND IDENTITY</h1>
-              <h1 className="text-base lg:text-lg">DEVELOPMENT</h1>
-              <h1 className="text-base lg:text-lg">PACKAGING DESIGN</h1>
-              <h1 className="text-base lg:text-lg">WEBSITE DESIGN & DEV</h1>
-            </div>
+              <h1 className="text-base lg:text-md">LOGO DESIGN</h1>
+              <h1 className="text-base lg:text-md">BRAND IDENTITY</h1>
+              <h1 className="text-base lg:text-md">DEVELOPMENT</h1>
+              <h1 className="text-base lg:text-md">PACKAGING DESIGN</h1>
+              <h1 className="text-base lg:text-md">WEBSITE DESIGN & DEV</h1>
+                     </div>
             {/* Main content block */}
             <div className="flex flex-col gap-5 lg:gap-5 w-full lg:w-[40vw]">
               <h1 className="text-3xl md:text-4xl lg:text-[4.5vw] leading-tight lg:leading-[5vw]">

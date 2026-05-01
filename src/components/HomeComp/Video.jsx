@@ -26,7 +26,7 @@ const Video = () => {
         loop
         muted
         className="lg:h-[80vh] h-[40vh] w-[80vw]"
-        src="https://rejouice-2024.cdn.prismic.io/rejouice-2024/Z2BbT5bqstJ98kk6_REJOUICE-PORTFOLIO-LOOP-PROJECTS.mp4"
+        src="/video/service-video.mp4"
       ></video>
     </div>
   );
