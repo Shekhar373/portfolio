@@ -6,7 +6,7 @@ const Text2 = () => {
       <div className='text-3xl lg:text-6xl p-5 lg:p-10'>
         <h1>Our approach.</h1>
       </div>
-      <div className='text-lg lg:text-2xl p-5 lg:p-10'>
+      <div className='text-md lg:text-2xl p-5 lg:p-10'>
         <h2 className='border-t-2 pt-10'>We approach every project with a balance of creativity and strategy. By understanding the brand at its core, we create design solutions that are thoughtful, cohesive, and built to make a lasting impression.</h2>
       </div>
     </div>

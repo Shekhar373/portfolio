@@ -25,6 +25,7 @@ const Video = () => {
         autoPlay
         loop
         muted
+        playsInline
         className="lg:h-[80vh] h-[40vh] w-[80vw]"
         src="/video/service-video.mp4"
       ></video>
