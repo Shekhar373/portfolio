@@ -8,32 +8,25 @@ const ParallexImg = () => {
     gsap.registerPlugin(ScrollTrigger)
 
     useGSAP(() => {
-        const mm = gsap.matchMedia();
-
-        mm.add("(min-width: 1024px)", () => {
-            gsap.utils.toArray(".ParaImg-Container").forEach((section) => {
-                const img = section.querySelector(".ParallexImg");
-                // Parallax + scale effect only on laptop and above
-                gsap.fromTo(
-                    img,
-                    { scale: 1.06, yPercent: -20 },
-                    {
-                        scale: 1,
-                        yPercent: 20,
-                        ease: "none",
-                        scrollTrigger: {
-                            trigger: section,
-                            start: "top bottom",
-                            end: "bottom top",
-                            scrub: true
-                        }
+        gsap.utils.toArray(".ParaImg-Container").forEach((section) => {
+            const img = section.querySelector(".ParallexImg");
+            // Parallax + scale effect for all screens
+            gsap.fromTo(
+                img,
+                { scale: 1.06, yPercent: -20 },
+                {
+                    scale: 1,
+                    yPercent: 20,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: true
                     }
-                );
-            });
+                }
+            );
         });
-
-        // Cleanup matchMedia on unmount
-        return () => mm.revert();
     });
     
     return (

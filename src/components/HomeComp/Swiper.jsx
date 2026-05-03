@@ -29,7 +29,7 @@ const Swiper = () => {
   return (
     <div
       ref={swiperref}
-      className="h-screen w-full relative flex flex-col lg:flex-row lg:w-[400vw] overflow-hidden"
+      className="h-screen w-full relative hidden lg:flex flex-col lg:flex-row lg:w-[400vw] overflow-hidden"
     >
       {/* Slide 1 */}
       <div className="relative h-screen w-[100vw] flex-shrink-0">

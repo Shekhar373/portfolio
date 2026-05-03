@@ -39,5 +39,6 @@ export const projects = [
     image5:"/projects/club/5.jpg",
     image6:"/projects/club/6.jpg",
     image7:"/projects/club/7.jpg",
+    image8:"/projects/club/3.jpg",
   },
 ];

@@ -8,9 +8,9 @@ const Follow = () => {
       </div>
       <div className='flex lg:text-8xl text-4xl md:text-6xl mt-10 lg:gap-12 gap-4 md:gap-10 '>
         <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">FB</a>
-        <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">IG</a>
-        <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">IN</a>
-        <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="#">X</a>
+        <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="https://www.instagram.com/newhuestudio.1/">IG</a>
+        <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="https://www.linkedin.com/in/new-hue-studio-8017b43b6">IN</a>
+        <a className='border-2 px-4 py-1 hover:text-[#D9FF06] rounded-[45%]' href="https://x.com/newhuestudio">X</a>
       </div>
     </div>
   )

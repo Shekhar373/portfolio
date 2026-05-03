@@ -45,7 +45,7 @@ const NewHero = () => {
       },
     });
     introTl.to(".hero-text-container", {
-      yPercent: window.innerWidth >= 1900 ? -30 : -50,
+      yPercent: -50,
       duration: 1,
       ease: "expo.inOut",
     });
@@ -125,17 +125,17 @@ const NewHero = () => {
           </div>
         </div>
         <div className="h-[40vh] w-full"></div>
-        <div className="hero-video visible lg:hidden px-5">
+        <div className="hero-video visible lg:hidden px-1">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className=" object-cover h-[40vh] w-full "
+            className=" object-cover h-[30vh] w-full "
             src="/video/hero_video.mp4"
           ></video>
         </div>
-        <div className="sub-heading h-[20vh] lg:h-[40vh]  w-full flex lg:pt-[20vh] gap-2 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
+        <div className="sub-heading h-[20vh] lg:h-[40vh] mt-[7vh] w-full flex lg:pt-[20vh] gap-2 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
           <h1 className="visual-text">A DESIGN</h1>
           <h1 className="design-text">STUDIO </h1>
         </div>
