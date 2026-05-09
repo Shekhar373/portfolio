@@ -38,11 +38,11 @@ const Testimonials = () => {
             {testimonials.map((testimonial, idx) => (
                 <div
                     key={idx}
-                    className="w-full sm:w-[90vw] md:w-[70vw] lg:w-[27vw] h-[60vh] md:h-[70vh] bg-white flex flex-col justify-between text-black rounded-lg overflow-hidden mb-8 lg:mb-0 shadow-lg"
+                    className="w-full sm:w-[90vw] md:w-[70vw] lg:w-[27vw] h-[60vh] md:h-[40vh] lg:h-[70vh] bg-white flex flex-col justify-between text-black rounded-lg overflow-hidden mb-8 lg:mb-0 shadow-lg"
                 >
                     <div className="flex items-center justify-center pt-8">
                         <img
-                            className="h-[10vh] w-[16vw] sm:h-[12vh] sm:w-[12vw] md:w-[7vw] object-cover"
+                            className="h-[10vh] md:h-[5vh] lg:h-[10vh] w-[16vw] sm:h-[12vh] sm:w-[12vw] md:w-[7vw] object-cover"
                             src={testimonial.logo}
                             alt={testimonial.name}
                         />

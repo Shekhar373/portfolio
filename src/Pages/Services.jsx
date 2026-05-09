@@ -13,7 +13,7 @@ const Services = () => {
     <div className="overflow-x-hidden bg-[#EBEAE4] text-[#090909]">
       <div className="h-[70vh] lg:h-[200vh] w-full bg-black">
         <div className="h-[30vh] lg:h-[60vh] w-full flex items-end max-md:pb-10 p-5 lg:p-10">
-           <h1 className="text-[14vw] lg:text-[6vw] leading-[6vw] text-white">Services</h1>
+           <h1 className="text-[14vw] lg:text-[6vw] leading-[6vw] md:leading-[15vw] lg:leading-[6vw] text-white">Services</h1>
         </div>
         <div className="h-[60vh] lg:h-screen w-full lg:px-10">
           <video 

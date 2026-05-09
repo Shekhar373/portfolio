@@ -63,22 +63,22 @@ const ServiceCard = () => {
             </div>
             {/* Center left block: Labels (hidden on mobile) */}
             <div className="hidden md:flex flex-col justify-start w-full lg:w-auto gap-1">
-              <h1 className="text-base lg:text-md">LOGO DESIGN</h1>
-              <h1 className="text-base lg:text-md">BRAND IDENTITY</h1>
-              <h1 className="text-base lg:text-md">DEVELOPMENT</h1>
-              <h1 className="text-base lg:text-md">PACKAGING DESIGN</h1>
-              <h1 className="text-base lg:text-md">WEBSITE DESIGN & DEV</h1>
-                     </div>
+              <h1 className="text-base lg:text-sm">LOGO DESIGN</h1>
+              <h1 className="text-base lg:text-sm">BRAND IDENTITY</h1>
+              <h1 className="text-base lg:text-sm">DEVELOPMENT</h1>
+              <h1 className="text-base lg:text-sm">PACKAGING DESIGN</h1>
+              <h1 className="text-base lg:text-sm">WEBSITE DESIGN & DEV</h1>
+            </div>
             {/* Main content block */}
             <div className="flex flex-col gap-5 lg:gap-5 w-full lg:w-[40vw]">
               <h1 className="text-3xl md:text-4xl lg:text-[4.5vw] leading-tight lg:leading-[5vw]">
                 {card.title}
               </h1>
-              <h1 className="text-base md:text-lg lg:text-md">
+              <h1 className="text-base md:text-xl lg:text-md">
                 {card.description}
               </h1>
               <img
-                className="h-[220px] md:h-[250px] lg:h-[35vh] w-full object-cover rounded-md"
+                className="h-[220px] md:h-[40vh] lg:h-[35vh] w-full object-cover rounded-md"
                 src={card.img}
                 alt=""
               />

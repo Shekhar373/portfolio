@@ -69,7 +69,7 @@ const NewHero = () => {
     introTl.from(
       splitt.chars,
       {
-        y: -100,
+        y: -150,
         duration: 1.5,
         ease: "expo.out",
       },
@@ -118,7 +118,7 @@ const NewHero = () => {
       >
         <div className="h-screen absolute flex justify-center pt-[40vh] lg:items-center uppercase lg:pt-[5vh] w-full text-center">
           <div className="hero-text-container">
-            <div className="hero-text text-[30vw] max-md:tracking-wide lg:text-[22vw] flex flex-col lg:gap-[5vw] lg:flex-row leading-[26vw] lg:leading-[25vw] w-full">
+            <div className="hero-text text-[30vw] max-md:tracking-wide md:text-[25vw] lg:text-[22vw] flex flex-col lg:gap-[5vw] lg:flex-row leading-[26vw] md:leading-[21vw] lg:leading-[25vw] w-full">
               <h1>NEW HUE</h1>
               <h1>STUDIO</h1>
             </div>
@@ -135,7 +135,7 @@ const NewHero = () => {
             src="/video/hero_video.mp4"
           ></video>
         </div>
-        <div className="sub-heading h-[20vh] lg:h-[40vh] mt-[7vh] w-full flex lg:pt-[8vh] gap-2 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
+        <div className="sub-heading h-[20vh] lg:h-[40vh] mt-[7vh] md:mt-[3vh] lg:mt-[7vh] w-full flex lg:pt-[8vh] max-md:gap-5 gap-3 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
           <h1 className="visual-text">A DESIGN</h1>
           <h1 className="design-text">STUDIO </h1>
         </div>

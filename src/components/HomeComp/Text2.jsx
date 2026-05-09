@@ -25,7 +25,7 @@ const Text2 = () => {
           scrollTrigger: {
             trigger: ".text-2",
             // markers: true,
-            start: "top 30%",
+            start: "top 50%",
             toggleActions: "play none none reverse",
           },
         });
@@ -35,12 +35,12 @@ const Text2 = () => {
   });
 
   return (
-    <div className='text-2 lg:h-screen max-sm:h-[60vh] pt-[10vh] w-full bg-[#EBEAE4] text-black'>
+    <div className='text-2 lg:h-[80vh] h-[60vh] md:h-[30vh] pt-[10vh] w-full bg-[#EBEAE4] text-black'>
       <div className='text-3xl lg:text-6xl p-5 lg:p-10'>
         <h1>Our approach.</h1>
       </div>
-      <div className='text-md lg:text-2xl px-5 lg:px-10'>
-        <h1 className='border-t-2 pt-10'>We approach every project with a balance of creativity and strategy. By understanding the brand at its core, we create design solutions that are thoughtful, cohesive, and built to make a lasting impression.</h1>
+      <div className='text-md md:text-xl lg:text-2xl  px-5 lg:px-10'>
+        <h1 className='border-t-2 pt-5'>We approach every project with a balance of creativity and strategy. By understanding the brand at its core, we create design solutions that are thoughtful, cohesive, and built to make a lasting impression.</h1>
       </div>
     </div>
   )

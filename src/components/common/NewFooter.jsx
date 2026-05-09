@@ -86,8 +86,8 @@ export default function Footer() {
         </div>
         {/* Bottom Title */}
         <div className="h-[16vh] md:h-[40%] px-5 w-full flex  justify-center items-end bg-gradient-to-b from-zinc-600 to-zinc-800 bg-clip-text text-transparent ">
-          <h1 className="text-[9.5vw] mb-2 sm:mb-3 md:mb-5 text-center">
-            NEW HUE STUDIO
+          <h1 className="text-[17vw] mb-2 sm:mb-3 md:mb-5 text-center">
+            NEW HUE
           </h1>
         </div>
       </footer>

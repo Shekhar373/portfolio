@@ -20,7 +20,7 @@ const Fixed = () => {
       <div className="nav relative w-full font-[text-font] text-sm flex px-5 lg:py-5 lg:px-10 text-white">
         <div
           onClick={home}
-          className="cursor-pointer fixed mix-blend-difference z-40 pt-5 md:pt-0 "
+          className="cursor-pointer fixed mix-blend-difference z-40 pt-5 lg:pt-0 "
         >
           <Link className=" transition-all" to="/">
             NEW HUE STUDIO
