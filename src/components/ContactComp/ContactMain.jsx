@@ -5,7 +5,7 @@ import Follow from './Follow'
 
 const ContactMain = () => {
   return (
-    <div>
+    <div className='max-md:mb-[20vh]'>
       <ContactHead />
       <Marque />
       <Follow />

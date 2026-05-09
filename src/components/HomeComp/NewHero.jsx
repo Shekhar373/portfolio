@@ -111,7 +111,7 @@ const NewHero = () => {
   });
 
   return (
-    <div id="hero" className="lg:h-[270vh] h-[100vh]  w-full bg-[#EBEAE4]">
+    <div id="hero" className="lg:h-[270vh] h-[92vh]  w-full bg-[#EBEAE4]">
       <div
         className="hero-parent h-[80vh] w-full relative font-[tall-font] "
         ref={heroParentRef}
@@ -135,7 +135,7 @@ const NewHero = () => {
             src="/video/hero_video.mp4"
           ></video>
         </div>
-        <div className="sub-heading h-[20vh] lg:h-[40vh] mt-[7vh] w-full flex lg:pt-[20vh] gap-2 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
+        <div className="sub-heading h-[20vh] lg:h-[40vh] mt-[7vh] w-full flex lg:pt-[8vh] gap-2 text-[13vw] lg:text-[4vw] justify-center lg:justify-center lg:items-center">
           <h1 className="visual-text">A DESIGN</h1>
           <h1 className="design-text">STUDIO </h1>
         </div>

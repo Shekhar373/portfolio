@@ -14,9 +14,9 @@ const Home = () => {
     <div className="bg-[#EBEAE4] overflow-x-hidden">
       <NewHero />
       <div className="bg-black">
-      <Text1 />
-      <ParallexImg />
-      <HomeServices />
+        <Text1 />
+        <ParallexImg />
+        <HomeServices />
       </div>
       <Swiper />
       <Text2 />

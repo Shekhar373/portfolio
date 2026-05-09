@@ -11,16 +11,15 @@ const KnowUs = () => {
       type: "chars, words",
     });
 
-    // Slow down by increasing the range of scroll (make end further)
     const scrollTween = gsap.to(horiscroll.current, {
-      xPercent: -143,
+      xPercent: -150,
       scrollTrigger: {
         trigger: horiscroll.current,
         // markers: true,
         start: "top 0%",
-        end: "top -700%", // was -150%, now much longer scroll distance
+        end: "top -700%",
         pin: true,
-        scrub: 1, // was 3, you may increase even to 4 or 5, but with a longer scroll it's already much slower
+        scrub: 1, 
       },
     });
 
@@ -44,7 +43,7 @@ const KnowUs = () => {
   return (
     <div
       ref={horiscroll}
-      className=" horizontal-text  font-[text-font] tracking-tight h-screen pl-[250vw]  whitespace-nowrap  flex justify-center items-center text-black text-[13vw]"
+      className=" horizontal-text  font-[text-font] tracking-tight h-screen pl-[210vw]  whitespace-nowrap  flex justify-center items-center text-black text-[13vw]"
     >
       <h1>Ready to stand out, not blend in?</h1>
     </div>
