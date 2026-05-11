@@ -13,18 +13,21 @@ const PinProject = () => {
     {
       id: 1,
       title: "Project 1",
+      slug: "zappi",
       name: "Zippi",
       image: "/projects/zappi/5.jpg",
     },
     {
       id: 2,
       title: "Project 2",
+      slug: "Arche-build",
       name: "Arche Build",
       image: "/projects/Arche-Build/Bill-board.webp",
     },
     {
       id: 3,
       title: "Project 3",
+      slug: "la-vella",
       name: "La Vella",
       image: "/projects/club/5.jpg",
     },
@@ -137,7 +140,7 @@ const PinProject = () => {
                 {project.name}
               </h1>
             </div>
-            <Link to="/work" className="relative z-10">
+            <Link to={`/work/${project.slug}`} key={project.slug} className="relative z-10">
               <img
                 ref={(ref) => setImgRef(ref, idx)}
                 src={project.image}
@@ -165,10 +168,11 @@ const PinProject = () => {
         ))}
 
         <div className="w-screen h-screen flex items-center justify-center flex-shrink-0 bg-black">
-          <h1 className="text-6xl text-white opacity-20">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white opacity-20 text-center px-4">
             More Projects Coming Soon
           </h1>
         </div>
+   
       </div>
     </div>
   );
