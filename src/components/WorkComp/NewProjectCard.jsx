@@ -14,7 +14,7 @@ const NewProjectCard = () => {
       const clip = section.querySelector(".clip-wrapper");
       const mm = gsap.matchMedia();
 
-    //   mm.add("(min-width: 1024px)", () => {
+      mm.add("(min-width: 1024px)", () => {
         gsap.fromTo(
           img,
           { scale: 1, yPercent: window.innerWidth >= 1024 ? -30 : -10  },
@@ -31,7 +31,7 @@ const NewProjectCard = () => {
           },
         );
       });
-    // });
+    });
   }, []);
 
   return (

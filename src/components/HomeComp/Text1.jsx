@@ -43,7 +43,7 @@ const Text1 = () => {
       >
         <div className="flex flex-col gap-10">
           <h1 className="text-sm lg:text-xl text-zinc-500">
-            [ ! ] Be the brand they never stop talkiong about
+            [ ! ] Be the brand they never stop talking about
           </h1>
           <h1 className="text-[6vw] md:text-[5vw] lg:text-[3.5vw] leading-[8vw] md:leading-[6.6vw] lg:leading-[4.5vw]">
             We don't just design brands. We make them impossible to forget. New
@@ -52,7 +52,7 @@ const Text1 = () => {
             long after the first glance.
           </h1>
         </div>
-        <div className="text-sm lg:text-2xl flex text-zinc-500 border-t  pt-10">
+        <div className="text-sm lg:text-2xl flex text-zinc-500 border-t pt-5 lg:pt-10">
           <div className="w-1/2 pr-5">
             <h1>Designing Iconic Brands</h1>
           </div>
