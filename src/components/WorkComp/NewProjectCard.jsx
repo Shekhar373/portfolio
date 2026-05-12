@@ -17,10 +17,10 @@ const NewProjectCard = () => {
       mm.add("(min-width: 1024px)", () => {
         gsap.fromTo(
           img,
-          { scale: 1, yPercent: window.innerWidth >= 1024 ? -30 : -10  },
+          { scale: 1, yPercent: -30 },
           {
             scale: 1,
-            yPercent: window.innerWidth >= 1024 ? 30 : 10 ,
+            yPercent: 30 ,
             ease: "none",
             scrollTrigger: {
               trigger: section,
