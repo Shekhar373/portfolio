@@ -45,7 +45,7 @@ const Text1 = () => {
           <h1 className="text-sm lg:text-xl text-zinc-500">
             [ ! ] Be the brand they never stop talkiong about
           </h1>
-          <h1 className="text-[6vw] md:text-[5vw] lg:text-[3.5vw] leading-[9.5vw] md:leading-[6.6vw] lg:leading-[4.5vw]">
+          <h1 className="text-[6vw] md:text-[5vw] lg:text-[3.5vw] leading-[8vw] md:leading-[6.6vw] lg:leading-[4.5vw]">
             We don't just design brands. We make them impossible to forget. New
             Hue Studio is where branding, visual design, motion, and 3D web
             experiences come together — built to turn heads and hold attention
