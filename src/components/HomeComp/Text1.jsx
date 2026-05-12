@@ -19,7 +19,7 @@ const Text1 = () => {
           // yPercent: 120,
           clipPath: "inset(0% 0% 100% 0%)",
           stagger: {
-            amount: 0.4,
+            amount: 1.5,
           },
           ease: "power2.out",
 
@@ -39,16 +39,27 @@ const Text1 = () => {
     <>
       <div
         ref={firsttext}
-        className="first-text text-[7.5vw] md:text-[5vw] lg:text-[3.5vw] leading-[9.5vw] md:leading-[6.6vw] lg:leading-[4.5vw] pt-[5vh] lg:pt-[10vh] h-[60vh] lg:h-screen w-full  text-white flex p-5 lg:p-10"
+        className="first-text  pt-[5vh] lg:pt-[10vh] h-screen lg:h-[160vh] w-full flex flex-col gap-[10vh] lg:gap-[25vh] text-white p-5 lg:p-10"
       >
-        <h1>
-        We don't just design brands. We make them impossible to forget.
-New Hue Studio is where branding, visual design, motion, and 3D web experiences come together — built to turn heads and hold attention long after the first glance.
-
-        </h1>
-      </div>
-      <div>
-      
+        <div className="flex flex-col gap-10">
+          <h1 className="text-sm lg:text-xl text-zinc-500">
+            [ ! ] Be the brand they never stop talkiong about
+          </h1>
+          <h1 className="text-[6vw] md:text-[5vw] lg:text-[3.5vw] leading-[9.5vw] md:leading-[6.6vw] lg:leading-[4.5vw]">
+            We don't just design brands. We make them impossible to forget. New
+            Hue Studio is where branding, visual design, motion, and 3D web
+            experiences come together — built to turn heads and hold attention
+            long after the first glance.
+          </h1>
+        </div>
+        <div className="text-sm lg:text-2xl flex text-zinc-500 border-t  pt-10">
+          <div className="w-1/2 pr-5">
+            <h1>Designing Iconic Brands</h1>
+          </div>
+          <div className="w-1/2">
+            <h1>Your brand has a story. We make sure it's seen, felt and remembered. We design logos, build brands and create moments that turn attention into action.</h1>
+          </div>
+        </div>
       </div>
     </>
   );
