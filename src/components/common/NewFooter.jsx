@@ -16,14 +16,14 @@ export default function Footer() {
             <h1 className="text-2xl sm:text-3xl lg:text-2xl xl:text-3xl font-semibold">
               DO IT ONCE, DO IT RIGHT
             </h1>
-            <div className="text-base sm:text-lg lg:text-xl mt-6 md:mt-10">
+            <div className="text-base w-fit sm:text-lg lg:text-xl mt-6 md:mt-10">
               <h3>
                 New Business <br />
-                <span className="break-all">newhuestudio25@gmail.com</span>
+               <a className="border-animate" href="mailto:newhuestudio@gmail.com">newhuestudio25@gmail.com</a>
               </h3>
             </div>
             <h3 className="text-base sm:text-lg lg:text-xl mt-6 md:mt-10 border-animate w-fit">
-              +91 97186 98074
+              <a href="tel:+\919718698074">+91 97186 98074</a>
             </h3>
           </div>
           {/* Right Side */}
@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
         {/* Bottom Title */}
         <div className="h-[16vh] md:h-[40%] px-5 w-full flex  justify-center items-end ">
-          <h1 className="text-[17vw] mb-2 sm:mb-3 md:mb-5 text-center">
+          <h1 className="text-[17vw] whitespace-nowrap mb-2 sm:mb-3 md:mb-5 text-center">
             NEW HUE
           </h1>
         </div>

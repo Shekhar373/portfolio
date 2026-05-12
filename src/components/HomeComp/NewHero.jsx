@@ -22,7 +22,7 @@ const NewHero = () => {
     const introTl = gsap.timeline();
 
     introTl.from(split.chars, {
-      y: 300,
+      y: 500,
       duration: 1,
       delay: 2.85,
       ease: "expo.out",
@@ -44,11 +44,19 @@ const NewHero = () => {
         amount: 0.1,
       },
     });
-    introTl.to(".hero-text-container", {
-      yPercent: -50,
-      duration: 1,
-      ease: "expo.inOut",
-    });
+    if (window.innerWidth > 1800) {
+      introTl.to(".hero-text-container", {
+        yPercent: -40,
+        duration: 1,
+        ease: "expo.inOut",
+      });
+    } else {
+      introTl.to(".hero-text-container", {
+        yPercent: -50,
+        duration: 1,
+        ease: "expo.inOut",
+      });
+    }
 
     introTl.from(herovideoRef.current, {
       clipPath: "inset(0 0 100% 0)",

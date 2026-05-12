@@ -15,7 +15,7 @@ const PinProject = () => {
       title: "Project 1",
       slug: "zappi",
       name: "Zippi",
-      image: "/projects/zappi/5.jpg",
+      image: "/projects/zappi/3.jpg",
     },
     {
       id: 2,
@@ -87,7 +87,7 @@ const PinProject = () => {
             x: x,
             y: y,
             ease: "expo.out",
-            duration: 0.5,
+            duration: 1,
           });
         };
 
