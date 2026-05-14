@@ -53,7 +53,7 @@ export default function Footer() {
             </div>
             {/* Socials */}
             <div className="flex gap-2 sm:gap-3 py-4 md:py-12 justify-center w-full md:w-1/2 items-center ">
-              <a href="https://www.instagram.com/newhuestudio.1/">
+              <a href="https://www.instagram.com/newhuestudio.in/">
                 <img
                   className=" h-8 w-8 hover:scale-120 transition-all"
                   src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%3E%0A%20%20%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2220%22%20height%3D%2220%22%20rx%3D%226%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%222%22%3E%3C%2Frect%3E%0A%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%225%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%222%22%3E%3C%2Fcircle%3E%0A%20%20%3Ccircle%20cx%3D%2217%22%20cy%3D%227%22%20r%3D%221.5%22%20fill%3D%22%23FFFFFF%22%3E%3C%2Fcircle%3E%0A%3C%2Fsvg%3E"

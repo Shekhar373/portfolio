@@ -15,13 +15,12 @@ const Text1 = () => {
       autoSplit: true,
       onSplit: (split) => {
         return gsap.from(split.lines, {
-          // opacity: 0,
-          // yPercent: 120,
-          clipPath: "inset(0% 0% 100% 0%)",
+          opacity: 0,
+          yPercent: 120,
+          ease: "power",
           stagger: {
-            amount: 1.5,
+            amount: 0.8,
           },
-          ease: "power2.out",
 
           scrollTrigger: {
             trigger: firsttext.current,
@@ -57,7 +56,11 @@ const Text1 = () => {
             <h1>Designing Iconic Brands</h1>
           </div>
           <div className="w-1/2">
-            <h1>Your brand has a story. We make sure it's seen, felt and remembered. We design logos, build brands and create moments that turn attention into action.</h1>
+            <h1>
+              Your brand has a story. We make sure it's seen, felt and
+              remembered. We design logos, build brands and create moments that
+              turn attention into action.
+            </h1>
           </div>
         </div>
       </div>
